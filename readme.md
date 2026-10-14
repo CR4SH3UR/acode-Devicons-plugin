@@ -2,10 +2,10 @@
 
 Pack d'icônes de fichiers et dossiers pour [Acode](https://acode.app) basé sur [Devicons](https://devicons.io) : les logos en couleur des langages, frameworks, outils et services (JavaScript, Python, Rust, Docker, React, Git, Supabase…).
 
-- **Les 1966 SVG de `@dev.icons/core` 1.3.0** : 1465 logos et 501 variantes compactes `-icon`, dans `icons/<nom>.svg`. Quand une variante `-icon` existe, c'est elle qui est affichée (plus lisible en petit).
+- **155 icônes** tirées de `@dev.icons/core` 1.3.0 (1966 disponibles) : seules les icônes associées sont incluses, pour un plugin léger (~250 Ko zippé). Quand une variante compacte `-icon` existe, c'est elle qui est utilisée (plus lisible en petit).
 - **190+ extensions** (`.js`, `.py`, `.rs`, `.kt`, `.dart`, `.vue`…)
 - **230+ noms de fichiers** (`package.json`, `Dockerfile`, `Cargo.toml`, `vite.config.ts`, `.gitignore`, `.env`…)
-- **1500+ noms de dossiers** : les dossiers spéciaux (`.github`, `node_modules`, `.vscode`…) et un dossier par logo (`docker/`, `react/`, `supabase/`…)
+- **60 noms de dossiers** : dossiers spéciaux (`.github`, `node_modules`, `.vscode`…) et dossiers de technos courants (`docker/`, `kubernetes/`, `android/`…)
 - Les logos noirs (GitHub, Rust, Markdown, Vercel…) sont recolorés en gris pour rester lisibles sur les thèmes sombres.
 
 ## Installation
@@ -26,7 +26,7 @@ npm run build   # régénère icons/, file_icons.json et folder_icons.json
 npm run pack    # build + crée plugin.zip
 ```
 
-Pour ajouter une association, éditer [`scripts/mappings.mjs`](scripts/mappings.mjs) : chaque clé est le nom d'une icône (voir [devicons.io](https://devicons.io)), chaque valeur la liste des extensions, noms de fichiers ou noms de dossiers correspondants. Le build échoue si un nom d'icône n'existe pas ou si une même entrée est associée à deux icônes.
+Pour ajouter une association, éditer [`scripts/mappings.mjs`](scripts/mappings.mjs) : chaque clé est le nom d'une icône (voir [devicons.io](https://devicons.io)), chaque valeur la liste des extensions, noms de fichiers ou noms de dossiers correspondants. Le build échoue si un nom d'icône n'existe pas ou si une même entrée est associée à deux icônes. Seules les icônes référencées sont copiées dans `icons/` : ajouter une association suffit à inclure l'icône au prochain build.
 
 | Chemin | Rôle |
 | --- | --- |
@@ -35,7 +35,7 @@ Pour ajouter une association, éditer [`scripts/mappings.mjs`](scripts/mappings.
 | `scripts/mappings.mjs` | Associations extensions / fichiers / dossiers → icône |
 | `scripts/build.mjs` | Découpe le sprite en SVG et génère les JSON |
 | `file_icons.json` / `folder_icons.json` | Tables générées |
-| `icons/` | SVG générés : toutes les icônes Devicons + icônes de dossier génériques |
+| `icons/` | SVG générés : icônes associées + icônes de dossier génériques |
 | `plugin.zip` | Archive installable |
 
 ## Licences
