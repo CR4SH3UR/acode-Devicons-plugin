@@ -1,6 +1,6 @@
 # Devicons for Acode
 
-![Devicons for Acode](https://cdn.jsdelivr.net/gh/CR4SH3UR/acode-devicons-assets@main/hero.png)
+![Devicons for Acode](https://raw.githubusercontent.com/CR4SH3UR/acode-Devicons-plugin/main/screenshots/hero.png)
 
 A file and folder icon pack for [Acode](https://acode.app) built from [Devicons](https://devicons.io): full-color logos for your languages, frameworks, tools and services (JavaScript, Python, Rust, Docker, React, Git, Supabase…).
 
@@ -13,9 +13,9 @@ A file and folder icon pack for [Acode](https://acode.app) built from [Devicons]
 
 ## Screenshots
 
-![Dark and light themes](https://cdn.jsdelivr.net/gh/CR4SH3UR/acode-devicons-assets@main/themes.png)
+![Dark and light themes](https://raw.githubusercontent.com/CR4SH3UR/acode-Devicons-plugin/main/screenshots/themes.png)
 
-![All icons](https://cdn.jsdelivr.net/gh/CR4SH3UR/acode-devicons-assets@main/icons.png)
+![All icons](https://raw.githubusercontent.com/CR4SH3UR/acode-Devicons-plugin/main/screenshots/icons.png)
 
 ## Usage
 
