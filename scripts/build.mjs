@@ -28,9 +28,11 @@ function fixMonochrome(svg, color) {
 	let out = svg
 		.replace(/currentColor/g, color || MONO_COLOR)
 		.replace(/(["':\s])black\b/gi, "$1#000000");
-	const colors = out.match(HEX) || [];
+	// White details (Rust, Next.js, .env…) don't count: a logo that is
+	// otherwise all dark still disappears on a dark background.
+	const colors = (out.match(HEX) || []).filter((c) => luminance(c) < 0.95);
 	if (colors.length && colors.every((c) => luminance(c) < 0.2)) {
-		out = out.replace(HEX, MONO_COLOR);
+		out = out.replace(HEX, (c) => (luminance(c) < 0.2 ? MONO_COLOR : c));
 	}
 	return out;
 }
