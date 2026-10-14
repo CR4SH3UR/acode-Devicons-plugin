@@ -1,6 +1,6 @@
 // Generates icons/, file_icons.json and folder_icons.json from the devicon
 // npm package and scripts/mappings.mjs. Run with `npm run build`.
-import { mkdirSync, readFileSync, rmSync, writeFileSync, existsSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { createRequire } from "node:module";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -21,12 +21,12 @@ const MONO_COLOR = "#A8A8A8";
 // Icons whose preferred variant is unreadable on dark themes.
 const VARIANT_OVERRIDES = { bash: "plain", unity: "plain", yaml: "plain" };
 
+// Returns the icon id (SVG file name without extension) used for `name`.
 function pickSvg(name) {
 	const dir = join(deviconDir, "icons", name);
 	const variants = VARIANT_OVERRIDES[name] ? [VARIANT_OVERRIDES[name], ...VARIANTS] : VARIANTS;
 	for (const variant of variants) {
-		const file = join(dir, `${name}-${variant}.svg`);
-		if (existsSync(file)) return file;
+		if (existsSync(join(dir, `${name}-${variant}.svg`))) return `${name}-${variant}`;
 	}
 	throw new Error(`No SVG found for devicon "${name}"`);
 }
@@ -69,14 +69,33 @@ const extensions = collect(fileExtensions, "fileExtensions");
 const files = collect(fileNames, "fileNames");
 const folders = collect(folderNames, "folderNames");
 
-const used = new Set([...extensions.values(), ...files.values(), ...folders.values()]);
+// Every technology also gets its folder: `docker/`, `react/`, `arm64/`…
+for (const icon of devicons.values()) {
+	for (const folder of [icon.name, ...(icon.altnames || [])]) {
+		const key = folder.toLowerCase();
+		if (!/^[\w.+-]+$/.test(key) || folders.has(key)) continue;
+		folders.set(key, icon.name);
+	}
+}
+
+// Ship every SVG variant, flattened to icons/<name>-<variant>.svg.
 const iconsDir = join(root, "icons");
 rmSync(iconsDir, { recursive: true, force: true });
 mkdirSync(iconsDir);
 
-for (const name of [...used].sort()) {
-	const svg = readFileSync(pickSvg(name), "utf8").trim();
-	writeFileSync(join(iconsDir, `${name}.svg`), `${fixMonochrome(svg)}\n`);
+let svgCount = 0;
+for (const name of devicons.keys()) {
+	const dir = join(deviconDir, "icons", name);
+	for (const file of readdirSync(dir).filter((f) => f.endsWith(".svg"))) {
+		const svg = readFileSync(join(dir, file), "utf8").trim();
+		writeFileSync(join(iconsDir, file), `${fixMonochrome(svg)}\n`);
+		svgCount++;
+	}
+}
+
+const iconIds = new Map([...devicons.keys()].map((name) => [name, pickSvg(name)]));
+for (const entries of [extensions, files, folders]) {
+	for (const [value, name] of entries) entries.set(value, iconIds.get(name));
 }
 
 // Generic folder icons (Devicon has none).
@@ -114,5 +133,5 @@ writeFileSync(
 );
 
 console.log(
-	`${used.size} icons, ${extensions.size} extensions, ${files.size} file names, ${folders.size} folder names`,
+	`${svgCount} SVGs (${devicons.size} technologies), ${extensions.size} extensions, ${files.size} file names, ${folders.size} folder names`,
 );
