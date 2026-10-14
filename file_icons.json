@@ -1,19 +1,31 @@
 [
 	{
-		"name": "android-original",
+		"name": "adobe-illustrator",
+		"file_extensions": [
+			"ai"
+		]
+	},
+	{
+		"name": "adobe-photoshop",
+		"file_extensions": [
+			"psd"
+		]
+	},
+	{
+		"name": "android-icon",
 		"file_name": [
 			"AndroidManifest.xml"
 		]
 	},
 	{
-		"name": "angular-original",
+		"name": "angular-icon",
 		"file_name": [
 			"angular.json",
 			".angular-cli.json"
 		]
 	},
 	{
-		"name": "apache-original",
+		"name": "apache",
 		"file_name": [
 			".htaccess",
 			".htpasswd"
@@ -23,21 +35,14 @@
 		]
 	},
 	{
-		"name": "apl-original",
-		"file_extensions": [
-			"apl",
-			"dyalog"
-		]
-	},
-	{
-		"name": "arduino-original",
+		"name": "arduino",
 		"file_extensions": [
 			"ino",
 			"pde"
 		]
 	},
 	{
-		"name": "astro-original",
+		"name": "astro-icon",
 		"file_name": [
 			"astro.config.mjs",
 			"astro.config.js",
@@ -48,13 +53,7 @@
 		]
 	},
 	{
-		"name": "awk-original",
-		"file_extensions": [
-			"awk"
-		]
-	},
-	{
-		"name": "babel-original",
+		"name": "babel",
 		"file_name": [
 			".babelrc",
 			".babelrc.json",
@@ -65,7 +64,7 @@
 		]
 	},
 	{
-		"name": "bash-plain",
+		"name": "bash-icon",
 		"file_name": [
 			".bashrc",
 			".bash_profile",
@@ -81,37 +80,27 @@
 		]
 	},
 	{
-		"name": "bazel-original",
-		"file_name": [
-			"BUILD.bazel",
-			"WORKSPACE",
-			"WORKSPACE.bazel",
-			"MODULE.bazel",
-			".bazelrc"
-		]
-	},
-	{
-		"name": "biome-original",
+		"name": "biomejs",
 		"file_name": [
 			"biome.json",
 			"biome.jsonc"
 		]
 	},
 	{
-		"name": "blender-original",
+		"name": "blender",
 		"file_extensions": [
 			"blend"
 		]
 	},
 	{
-		"name": "bower-original",
+		"name": "bower",
 		"file_name": [
 			"bower.json",
 			".bowerrc"
 		]
 	},
 	{
-		"name": "bun-original",
+		"name": "bun",
 		"file_name": [
 			"bun.lockb",
 			"bun.lock",
@@ -119,79 +108,14 @@
 		]
 	},
 	{
-		"name": "c-original",
+		"name": "c",
 		"file_extensions": [
 			"c",
 			"h"
 		]
 	},
 	{
-		"name": "cairo-original",
-		"file_extensions": [
-			"cairo"
-		]
-	},
-	{
-		"name": "ceylon-original",
-		"file_extensions": [
-			"ceylon"
-		]
-	},
-	{
-		"name": "clojure-original",
-		"file_extensions": [
-			"clj",
-			"cljc",
-			"edn"
-		]
-	},
-	{
-		"name": "clojurescript-original",
-		"file_extensions": [
-			"cljs"
-		]
-	},
-	{
-		"name": "cmake-original",
-		"file_name": [
-			"CMakeLists.txt",
-			"CMakeCache.txt"
-		],
-		"file_extensions": [
-			"cmake"
-		]
-	},
-	{
-		"name": "cobol-original",
-		"file_extensions": [
-			"cob",
-			"cbl",
-			"cpy"
-		]
-	},
-	{
-		"name": "codecov-plain",
-		"file_name": [
-			"codecov.yml",
-			".codecov.yml"
-		]
-	},
-	{
-		"name": "coffeescript-original",
-		"file_extensions": [
-			"coffee",
-			"litcoffee"
-		]
-	},
-	{
-		"name": "composer-original",
-		"file_name": [
-			"composer.json",
-			"composer.lock"
-		]
-	},
-	{
-		"name": "cplusplus-original",
+		"name": "c-plusplus",
 		"file_extensions": [
 			"cpp",
 			"cc",
@@ -205,32 +129,62 @@
 		]
 	},
 	{
-		"name": "crystal-original",
-		"file_extensions": [
-			"cr"
-		]
-	},
-	{
-		"name": "csharp-original",
+		"name": "c-sharp",
 		"file_extensions": [
 			"cs",
 			"csx"
 		]
 	},
 	{
-		"name": "css3-original",
+		"name": "ceylon",
+		"file_extensions": [
+			"ceylon"
+		]
+	},
+	{
+		"name": "clojure",
+		"file_extensions": [
+			"clj",
+			"cljc",
+			"cljs",
+			"edn"
+		]
+	},
+	{
+		"name": "codecov-icon",
+		"file_name": [
+			"codecov.yml",
+			".codecov.yml"
+		]
+	},
+	{
+		"name": "coffeescript",
+		"file_extensions": [
+			"coffee",
+			"litcoffee"
+		]
+	},
+	{
+		"name": "composer",
+		"file_name": [
+			"composer.json",
+			"composer.lock"
+		]
+	},
+	{
+		"name": "crystal",
+		"file_extensions": [
+			"cr"
+		]
+	},
+	{
+		"name": "css",
 		"file_extensions": [
 			"css"
 		]
 	},
 	{
-		"name": "cucumber-plain",
-		"file_extensions": [
-			"feature"
-		]
-	},
-	{
-		"name": "cypressio-original",
+		"name": "cypress-icon",
 		"file_name": [
 			"cypress.config.js",
 			"cypress.config.ts",
@@ -238,21 +192,13 @@
 		]
 	},
 	{
-		"name": "dart-original",
+		"name": "dart",
 		"file_extensions": [
 			"dart"
 		]
 	},
 	{
-		"name": "delphi-original",
-		"file_extensions": [
-			"dpr",
-			"dfm",
-			"pas"
-		]
-	},
-	{
-		"name": "denojs-original",
+		"name": "deno",
 		"file_name": [
 			"deno.json",
 			"deno.jsonc",
@@ -260,7 +206,14 @@
 		]
 	},
 	{
-		"name": "docker-original",
+		"name": "dependabot",
+		"file_name": [
+			"dependabot.yml",
+			"dependabot.yaml"
+		]
+	},
+	{
+		"name": "docker-icon",
 		"file_name": [
 			"Dockerfile",
 			"dockerfile",
@@ -277,7 +230,13 @@
 		]
 	},
 	{
-		"name": "eleventy-original",
+		"name": "editorconfig",
+		"file_name": [
+			".editorconfig"
+		]
+	},
+	{
+		"name": "eleventy",
 		"file_name": [
 			".eleventy.js",
 			"eleventy.config.js",
@@ -286,7 +245,7 @@
 		]
 	},
 	{
-		"name": "elixir-original",
+		"name": "elixir-icon",
 		"file_extensions": [
 			"ex",
 			"exs",
@@ -296,20 +255,41 @@
 		]
 	},
 	{
-		"name": "elm-original",
+		"name": "elm",
 		"file_extensions": [
 			"elm"
 		]
 	},
 	{
-		"name": "erlang-original",
+		"name": "env",
+		"file_name": [
+			".env",
+			".env.local",
+			".env.development",
+			".env.production",
+			".env.test",
+			".env.example"
+		],
+		"file_extensions": [
+			"env"
+		]
+	},
+	{
+		"name": "erlang-icon",
 		"file_extensions": [
 			"erl",
 			"hrl"
 		]
 	},
 	{
-		"name": "eslint-original",
+		"name": "esbuild",
+		"file_name": [
+			"esbuild.config.js",
+			"esbuild.config.mjs"
+		]
+	},
+	{
+		"name": "eslint",
 		"file_name": [
 			".eslintrc",
 			".eslintrc.js",
@@ -325,20 +305,20 @@
 		]
 	},
 	{
-		"name": "figma-original",
+		"name": "figma",
 		"file_extensions": [
 			"fig"
 		]
 	},
 	{
-		"name": "firebase-original",
+		"name": "firebase-icon",
 		"file_name": [
 			"firebase.json",
 			".firebaserc"
 		]
 	},
 	{
-		"name": "flutter-original",
+		"name": "flutter",
 		"file_name": [
 			"pubspec.yaml",
 			"pubspec.lock",
@@ -346,7 +326,7 @@
 		]
 	},
 	{
-		"name": "fortran-original",
+		"name": "fortran",
 		"file_extensions": [
 			"f",
 			"for",
@@ -358,7 +338,7 @@
 		]
 	},
 	{
-		"name": "fsharp-original",
+		"name": "fsharp",
 		"file_extensions": [
 			"fs",
 			"fsi",
@@ -367,7 +347,7 @@
 		]
 	},
 	{
-		"name": "gatsby-original",
+		"name": "gatsby",
 		"file_name": [
 			"gatsby-config.js",
 			"gatsby-config.ts",
@@ -377,14 +357,7 @@
 		]
 	},
 	{
-		"name": "gcc-original",
-		"file_extensions": [
-			"o",
-			"a"
-		]
-	},
-	{
-		"name": "git-original",
+		"name": "git-icon",
 		"file_name": [
 			".gitignore",
 			".gitattributes",
@@ -395,19 +368,13 @@
 		]
 	},
 	{
-		"name": "gitlab-original",
+		"name": "gitlab",
 		"file_name": [
 			".gitlab-ci.yml"
 		]
 	},
 	{
-		"name": "gleam-original",
-		"file_extensions": [
-			"gleam"
-		]
-	},
-	{
-		"name": "go-original",
+		"name": "go",
 		"file_name": [
 			"go.mod",
 			"go.sum",
@@ -418,7 +385,7 @@
 		]
 	},
 	{
-		"name": "godot-original",
+		"name": "godot-icon",
 		"file_extensions": [
 			"gd",
 			"tscn",
@@ -427,7 +394,7 @@
 		]
 	},
 	{
-		"name": "gradle-original",
+		"name": "gradle",
 		"file_name": [
 			"gradlew",
 			"gradlew.bat",
@@ -442,7 +409,7 @@
 		]
 	},
 	{
-		"name": "graphql-plain",
+		"name": "graphql",
 		"file_extensions": [
 			"graphql",
 			"gql",
@@ -450,16 +417,7 @@
 		]
 	},
 	{
-		"name": "groovy-original",
-		"file_extensions": [
-			"groovy",
-			"gvy",
-			"gy",
-			"gsh"
-		]
-	},
-	{
-		"name": "grunt-original",
+		"name": "grunt",
 		"file_name": [
 			"Gruntfile.js",
 			"gruntfile.js",
@@ -467,7 +425,7 @@
 		]
 	},
 	{
-		"name": "gulp-plain",
+		"name": "gulp",
 		"file_name": [
 			"gulpfile.js",
 			"Gulpfile.js",
@@ -476,7 +434,13 @@
 		]
 	},
 	{
-		"name": "handlebars-original",
+		"name": "haml",
+		"file_extensions": [
+			"haml"
+		]
+	},
+	{
+		"name": "handlebars",
 		"file_extensions": [
 			"hbs",
 			"handlebars",
@@ -484,21 +448,14 @@
 		]
 	},
 	{
-		"name": "haskell-original",
+		"name": "haskell-icon",
 		"file_extensions": [
 			"hs",
 			"lhs"
 		]
 	},
 	{
-		"name": "haxe-original",
-		"file_extensions": [
-			"hx",
-			"hxml"
-		]
-	},
-	{
-		"name": "helm-original",
+		"name": "helm",
 		"file_name": [
 			"Chart.yaml",
 			"Chart.lock",
@@ -507,13 +464,13 @@
 		]
 	},
 	{
-		"name": "heroku-original",
+		"name": "heroku-icon",
 		"file_name": [
 			"Procfile"
 		]
 	},
 	{
-		"name": "html5-original",
+		"name": "html-5",
 		"file_extensions": [
 			"html",
 			"htm",
@@ -522,13 +479,7 @@
 		]
 	},
 	{
-		"name": "illustrator-original",
-		"file_extensions": [
-			"ai"
-		]
-	},
-	{
-		"name": "java-original",
+		"name": "java",
 		"file_extensions": [
 			"java",
 			"jar",
@@ -537,7 +488,7 @@
 		]
 	},
 	{
-		"name": "javascript-original",
+		"name": "javascript",
 		"file_extensions": [
 			"js",
 			"mjs",
@@ -545,19 +496,19 @@
 		]
 	},
 	{
-		"name": "jekyll-original",
+		"name": "jekyll",
 		"file_name": [
 			"_config.yml"
 		]
 	},
 	{
-		"name": "jenkins-original",
+		"name": "jenkins",
 		"file_name": [
 			"Jenkinsfile"
 		]
 	},
 	{
-		"name": "jest-plain",
+		"name": "jest",
 		"file_name": [
 			"jest.config.js",
 			"jest.config.ts",
@@ -567,7 +518,7 @@
 		]
 	},
 	{
-		"name": "json-original",
+		"name": "json",
 		"file_extensions": [
 			"json",
 			"jsonc",
@@ -578,80 +529,69 @@
 		]
 	},
 	{
-		"name": "jule-original",
-		"file_extensions": [
-			"jule"
-		]
-	},
-	{
-		"name": "julia-original",
+		"name": "julia",
 		"file_extensions": [
 			"jl"
 		]
 	},
 	{
-		"name": "jupyter-original",
+		"name": "jupyter",
 		"file_extensions": [
 			"ipynb"
 		]
 	},
 	{
-		"name": "karma-original",
+		"name": "karma",
 		"file_name": [
 			"karma.conf.js"
 		]
 	},
 	{
-		"name": "kotlin-original",
+		"name": "kotlin-icon",
 		"file_extensions": [
 			"kt",
 			"kts"
 		]
 	},
 	{
-		"name": "kubernetes-original",
+		"name": "kubernetes",
 		"file_name": [
 			"kustomization.yaml",
 			"kustomization.yml"
 		]
 	},
 	{
-		"name": "labview-original",
-		"file_extensions": [
-			"vi",
-			"lvproj"
+		"name": "lerna",
+		"file_name": [
+			"lerna.json"
 		]
 	},
 	{
-		"name": "latex-original",
-		"file_extensions": [
-			"tex",
-			"ltx",
-			"sty",
-			"cls",
-			"bib"
-		]
-	},
-	{
-		"name": "less-plain-wordmark",
+		"name": "less",
 		"file_extensions": [
 			"less"
 		]
 	},
 	{
-		"name": "llvm-original",
-		"file_extensions": [
-			"ll"
-		]
-	},
-	{
-		"name": "lua-original",
+		"name": "lua",
 		"file_extensions": [
 			"lua"
 		]
 	},
 	{
-		"name": "markdown-original",
+		"name": "make-icon",
+		"file_name": [
+			"Makefile",
+			"makefile",
+			"GNUmakefile"
+		],
+		"file_extensions": [
+			"mk",
+			"mak"
+		]
+	},
+	{
+		"name": "markdown",
 		"file_name": [
 			"README",
 			"CHANGELOG"
@@ -660,12 +600,17 @@
 			"md",
 			"markdown",
 			"mdown",
-			"mkd",
-			"mdx"
+			"mkd"
 		]
 	},
 	{
-		"name": "matlab-original",
+		"name": "marko",
+		"file_extensions": [
+			"marko"
+		]
+	},
+	{
+		"name": "matlab",
 		"file_extensions": [
 			"m",
 			"mat",
@@ -673,7 +618,7 @@
 		]
 	},
 	{
-		"name": "maven-original",
+		"name": "maven",
 		"file_name": [
 			"pom.xml",
 			"mvnw",
@@ -681,19 +626,25 @@
 		]
 	},
 	{
-		"name": "microsoftsqlserver-original",
+		"name": "mdx",
+		"file_extensions": [
+			"mdx"
+		]
+	},
+	{
+		"name": "microsoft-sql-server",
 		"file_extensions": [
 			"sql"
 		]
 	},
 	{
-		"name": "netlify-original",
+		"name": "netlify-icon",
 		"file_name": [
 			"netlify.toml"
 		]
 	},
 	{
-		"name": "nextjs-original",
+		"name": "nextjs-icon",
 		"file_name": [
 			"next.config.js",
 			"next.config.mjs",
@@ -702,7 +653,7 @@
 		]
 	},
 	{
-		"name": "nginx-original",
+		"name": "nginx",
 		"file_name": [
 			"nginx.conf"
 		],
@@ -712,7 +663,7 @@
 		]
 	},
 	{
-		"name": "nim-original",
+		"name": "nim-lang",
 		"file_extensions": [
 			"nim",
 			"nims",
@@ -720,32 +671,20 @@
 		]
 	},
 	{
-		"name": "nixos-original",
-		"file_extensions": [
-			"nix"
-		]
-	},
-	{
-		"name": "nodejs-original",
+		"name": "nodejs-icon",
 		"file_name": [
 			".nvmrc",
 			".node-version"
 		]
 	},
 	{
-		"name": "nodemon-original",
+		"name": "nodemon",
 		"file_name": [
 			"nodemon.json"
 		]
 	},
 	{
-		"name": "norg-original",
-		"file_extensions": [
-			"norg"
-		]
-	},
-	{
-		"name": "npm-original",
+		"name": "npm-icon",
 		"file_name": [
 			"package.json",
 			"package-lock.json",
@@ -754,33 +693,27 @@
 		]
 	},
 	{
-		"name": "nuxtjs-original",
+		"name": "nuxt-icon",
 		"file_name": [
 			"nuxt.config.js",
 			"nuxt.config.ts"
 		]
 	},
 	{
-		"name": "objectivec-plain",
-		"file_extensions": [
-			"mm"
+		"name": "nx",
+		"file_name": [
+			"nx.json"
 		]
 	},
 	{
-		"name": "ocaml-original",
+		"name": "ocaml",
 		"file_extensions": [
 			"ml",
 			"mli"
 		]
 	},
 	{
-		"name": "opencl-original",
-		"file_extensions": [
-			"cl"
-		]
-	},
-	{
-		"name": "opengl-original",
+		"name": "opengl",
 		"file_extensions": [
 			"glsl",
 			"vert",
@@ -790,7 +723,19 @@
 		]
 	},
 	{
-		"name": "perl-original",
+		"name": "parcel-icon",
+		"file_name": [
+			".parcelrc"
+		]
+	},
+	{
+		"name": "pdf",
+		"file_extensions": [
+			"pdf"
+		]
+	},
+	{
+		"name": "perl",
 		"file_extensions": [
 			"pl",
 			"pm",
@@ -799,13 +744,7 @@
 		]
 	},
 	{
-		"name": "photoshop-original",
-		"file_extensions": [
-			"psd"
-		]
-	},
-	{
-		"name": "php-original",
+		"name": "php",
 		"file_extensions": [
 			"php",
 			"phtml",
@@ -816,7 +755,7 @@
 		]
 	},
 	{
-		"name": "playwright-original",
+		"name": "playwright",
 		"file_name": [
 			"playwright.config.js",
 			"playwright.config.ts",
@@ -824,14 +763,14 @@
 		]
 	},
 	{
-		"name": "pm2-original",
+		"name": "pm2-icon",
 		"file_name": [
 			"ecosystem.config.js",
 			"ecosystem.config.cjs"
 		]
 	},
 	{
-		"name": "pnpm-original",
+		"name": "pnpm",
 		"file_name": [
 			"pnpm-lock.yaml",
 			"pnpm-workspace.yaml",
@@ -839,13 +778,7 @@
 		]
 	},
 	{
-		"name": "poetry-original",
-		"file_name": [
-			"poetry.lock"
-		]
-	},
-	{
-		"name": "postcss-original",
+		"name": "postcss",
 		"file_name": [
 			"postcss.config.js",
 			"postcss.config.cjs",
@@ -855,7 +788,7 @@
 		]
 	},
 	{
-		"name": "powershell-original",
+		"name": "powershell",
 		"file_extensions": [
 			"ps1",
 			"psm1",
@@ -863,7 +796,22 @@
 		]
 	},
 	{
-		"name": "prisma-original",
+		"name": "prettier",
+		"file_name": [
+			".prettierrc",
+			".prettierrc.json",
+			".prettierrc.js",
+			".prettierrc.cjs",
+			".prettierrc.yml",
+			".prettierrc.yaml",
+			".prettierignore",
+			"prettier.config.js",
+			"prettier.config.cjs",
+			"prettier.config.mjs"
+		]
+	},
+	{
+		"name": "prisma",
 		"file_name": [
 			"schema.prisma"
 		],
@@ -872,34 +820,20 @@
 		]
 	},
 	{
-		"name": "prolog-original",
-		"file_extensions": [
-			"pro",
-			"prolog"
-		]
-	},
-	{
-		"name": "pug-original",
+		"name": "pug",
 		"file_extensions": [
 			"pug",
 			"jade"
 		]
 	},
 	{
-		"name": "purescript-original",
+		"name": "purescript-icon",
 		"file_extensions": [
 			"purs"
 		]
 	},
 	{
-		"name": "pytest-original",
-		"file_name": [
-			"pytest.ini",
-			"conftest.py"
-		]
-	},
-	{
-		"name": "python-original",
+		"name": "python",
 		"file_name": [
 			"requirements.txt",
 			"pyproject.toml",
@@ -908,7 +842,8 @@
 			"Pipfile",
 			"Pipfile.lock",
 			"tox.ini",
-			".python-version"
+			".python-version",
+			"poetry.lock"
 		],
 		"file_extensions": [
 			"py",
@@ -920,20 +855,7 @@
 		]
 	},
 	{
-		"name": "r-original",
-		"file_extensions": [
-			"r",
-			"rmd"
-		]
-	},
-	{
-		"name": "racket-original",
-		"file_extensions": [
-			"rkt"
-		]
-	},
-	{
-		"name": "rails-plain",
+		"name": "rails-icon",
 		"file_name": [
 			"Gemfile",
 			"Gemfile.lock",
@@ -942,34 +864,36 @@
 		]
 	},
 	{
-		"name": "react-original",
+		"name": "react",
 		"file_extensions": [
 			"jsx",
 			"tsx"
 		]
 	},
 	{
-		"name": "readthedocs-original",
+		"name": "reasonml-icon",
+		"file_extensions": [
+			"re",
+			"rei"
+		]
+	},
+	{
+		"name": "renovatebot",
 		"file_name": [
-			".readthedocs.yml",
-			".readthedocs.yaml"
+			"renovate.json",
+			"renovate.json5",
+			".renovaterc"
 		]
 	},
 	{
-		"name": "renpy-original",
+		"name": "rescript-icon",
 		"file_extensions": [
-			"rpy"
+			"res",
+			"resi"
 		]
 	},
 	{
-		"name": "rexx-original",
-		"file_extensions": [
-			"rexx",
-			"rex"
-		]
-	},
-	{
-		"name": "rollup-original",
+		"name": "rollupjs",
 		"file_name": [
 			"rollup.config.js",
 			"rollup.config.mjs",
@@ -977,7 +901,7 @@
 		]
 	},
 	{
-		"name": "ruby-original",
+		"name": "ruby",
 		"file_extensions": [
 			"rb",
 			"erb",
@@ -987,7 +911,7 @@
 		]
 	},
 	{
-		"name": "rust-original",
+		"name": "rust",
 		"file_name": [
 			"Cargo.toml",
 			"Cargo.lock",
@@ -1000,14 +924,14 @@
 		]
 	},
 	{
-		"name": "sass-original",
+		"name": "sass",
 		"file_extensions": [
 			"scss",
 			"sass"
 		]
 	},
 	{
-		"name": "scala-original",
+		"name": "scala",
 		"file_extensions": [
 			"scala",
 			"sc",
@@ -1015,19 +939,25 @@
 		]
 	},
 	{
-		"name": "sketch-original",
+		"name": "sketch",
 		"file_extensions": [
 			"sketch"
 		]
 	},
 	{
-		"name": "solidity-original",
+		"name": "slim",
+		"file_extensions": [
+			"slim"
+		]
+	},
+	{
+		"name": "solidity",
 		"file_extensions": [
 			"sol"
 		]
 	},
 	{
-		"name": "sqlite-original",
+		"name": "sqlite-icon",
 		"file_extensions": [
 			"sqlite",
 			"sqlite3",
@@ -1035,21 +965,23 @@
 		]
 	},
 	{
-		"name": "stata-original-wordmark",
-		"file_extensions": [
-			"do",
-			"ado",
-			"dta"
+		"name": "stylelint",
+		"file_name": [
+			".stylelintrc",
+			".stylelintrc.json",
+			".stylelintrc.js",
+			"stylelint.config.js",
+			"stylelint.config.mjs"
 		]
 	},
 	{
-		"name": "stylus-original",
+		"name": "stylus",
 		"file_extensions": [
 			"styl"
 		]
 	},
 	{
-		"name": "svelte-original",
+		"name": "svelte-icon",
 		"file_name": [
 			"svelte.config.js",
 			"svelte.config.mjs"
@@ -1059,13 +991,25 @@
 		]
 	},
 	{
-		"name": "swift-original",
+		"name": "svg",
+		"file_extensions": [
+			"svg"
+		]
+	},
+	{
+		"name": "swc",
+		"file_name": [
+			".swcrc"
+		]
+	},
+	{
+		"name": "swift",
 		"file_extensions": [
 			"swift"
 		]
 	},
 	{
-		"name": "tailwindcss-original",
+		"name": "tailwind-icon",
 		"file_name": [
 			"tailwind.config.js",
 			"tailwind.config.cjs",
@@ -1074,13 +1018,13 @@
 		]
 	},
 	{
-		"name": "tauri-original",
+		"name": "tauri",
 		"file_name": [
 			"tauri.conf.json"
 		]
 	},
 	{
-		"name": "terraform-original",
+		"name": "terraform-icon",
 		"file_name": [
 			".terraform.lock.hcl"
 		],
@@ -1091,19 +1035,25 @@
 		]
 	},
 	{
-		"name": "travis-original",
+		"name": "toml",
+		"file_extensions": [
+			"toml"
+		]
+	},
+	{
+		"name": "travis-ci",
 		"file_name": [
 			".travis.yml"
 		]
 	},
 	{
-		"name": "turbo-original",
+		"name": "turborepo-icon",
 		"file_name": [
 			"turbo.json"
 		]
 	},
 	{
-		"name": "typescript-original",
+		"name": "typescript-icon",
 		"file_name": [
 			"tsconfig.json",
 			"jsconfig.json"
@@ -1115,7 +1065,7 @@
 		]
 	},
 	{
-		"name": "unity-plain",
+		"name": "unity",
 		"file_extensions": [
 			"unity",
 			"prefab",
@@ -1123,27 +1073,20 @@
 		]
 	},
 	{
-		"name": "vagrant-original",
+		"name": "vagrant-icon",
 		"file_name": [
 			"Vagrantfile"
 		]
 	},
 	{
-		"name": "vala-original",
-		"file_extensions": [
-			"vala",
-			"vapi"
-		]
-	},
-	{
-		"name": "vercel-original",
+		"name": "vercel-icon",
 		"file_name": [
 			"vercel.json",
 			".vercelignore"
 		]
 	},
 	{
-		"name": "vim-original",
+		"name": "vim",
 		"file_name": [
 			".vimrc",
 			".gvimrc",
@@ -1154,15 +1097,13 @@
 		]
 	},
 	{
-		"name": "visualbasic-original",
-		"file_extensions": [
-			"vb",
-			"vbs",
-			"bas"
+		"name": "visual-studio-code",
+		"file_name": [
+			".vscodeignore"
 		]
 	},
 	{
-		"name": "vitejs-original",
+		"name": "vite",
 		"file_name": [
 			"vite.config.js",
 			"vite.config.ts",
@@ -1171,7 +1112,7 @@
 		]
 	},
 	{
-		"name": "vitest-original",
+		"name": "vitest",
 		"file_name": [
 			"vitest.config.js",
 			"vitest.config.ts",
@@ -1180,38 +1121,26 @@
 		]
 	},
 	{
-		"name": "vscode-original",
-		"file_name": [
-			".vscodeignore"
-		]
-	},
-	{
-		"name": "vuejs-original",
+		"name": "vue",
 		"file_extensions": [
 			"vue"
 		]
 	},
 	{
-		"name": "vulkan-original",
+		"name": "vulkan",
 		"file_extensions": [
 			"spv"
 		]
 	},
 	{
-		"name": "vyper-original",
-		"file_extensions": [
-			"vy"
-		]
-	},
-	{
-		"name": "wasm-original",
+		"name": "webassembly",
 		"file_extensions": [
 			"wasm",
 			"wat"
 		]
 	},
 	{
-		"name": "webpack-original",
+		"name": "webpack",
 		"file_name": [
 			"webpack.config.js",
 			"webpack.config.ts",
@@ -1220,34 +1149,14 @@
 		]
 	},
 	{
-		"name": "xd-original",
-		"file_extensions": [
-			"xd"
-		]
-	},
-	{
-		"name": "xml-original",
-		"file_extensions": [
-			"xml",
-			"xsd",
-			"xsl",
-			"xslt",
-			"plist",
-			"csproj",
-			"fsproj",
-			"vbproj",
-			"svg"
-		]
-	},
-	{
-		"name": "yaml-plain",
+		"name": "yaml",
 		"file_extensions": [
 			"yml",
 			"yaml"
 		]
 	},
 	{
-		"name": "yarn-original",
+		"name": "yarn",
 		"file_name": [
 			"yarn.lock",
 			".yarnrc",
@@ -1255,14 +1164,14 @@
 		]
 	},
 	{
-		"name": "zig-original",
+		"name": "zig",
 		"file_extensions": [
 			"zig",
 			"zon"
 		]
 	},
 	{
-		"name": "zsh-original",
+		"name": "zsh",
 		"file_name": [
 			".zshrc",
 			".zprofile",
