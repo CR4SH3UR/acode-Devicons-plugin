@@ -1,5 +1,7 @@
 # Devicons pour Acode
 
+![Devicons pour Acode](https://raw.githubusercontent.com/CR4SH3UR/acode-Devicons-plugin/main/screenshots/hero.png)
+
 Pack d'icônes de fichiers et dossiers pour [Acode](https://acode.app) basé sur [Devicons](https://devicons.io) : les logos en couleur des langages, frameworks, outils et services (JavaScript, Python, Rust, Docker, React, Git, Supabase…).
 
 - **155 icônes** tirées de `@dev.icons/core` 1.3.0 (1966 disponibles) : seules les icônes associées sont incluses, pour un plugin léger (~250 Ko zippé). Quand une variante compacte `-icon` existe, c'est elle qui est utilisée (plus lisible en petit).
@@ -7,6 +9,16 @@ Pack d'icônes de fichiers et dossiers pour [Acode](https://acode.app) basé sur
 - **230+ noms de fichiers** (`package.json`, `Dockerfile`, `Cargo.toml`, `vite.config.ts`, `.gitignore`, `.env`…)
 - **60 noms de dossiers** : dossiers spéciaux (`.github`, `node_modules`, `.vscode`…) et dossiers de technos courants (`docker/`, `kubernetes/`, `android/`…)
 - Les logos noirs (GitHub, Rust, Markdown, Vercel…) sont recolorés en gris pour rester lisibles sur les thèmes sombres.
+
+## Aperçu
+
+Lisibles sur les thèmes sombres comme clairs :
+
+![Thème sombre et thème clair](https://raw.githubusercontent.com/CR4SH3UR/acode-Devicons-plugin/main/screenshots/themes.png)
+
+Toutes les icônes incluses :
+
+![Les icônes du pack](https://raw.githubusercontent.com/CR4SH3UR/acode-Devicons-plugin/main/screenshots/icons.png)
 
 ## Installation
 
@@ -24,6 +36,7 @@ Les icônes et les tables d'associations sont générées depuis le sprite SVG d
 npm install
 npm run build   # régénère icons/, file_icons.json et folder_icons.json
 npm run pack    # build + crée plugin.zip
+npm run screenshots   # régénère les images de présentation (nécessite Playwright)
 ```
 
 Pour ajouter une association, éditer [`scripts/mappings.mjs`](scripts/mappings.mjs) : chaque clé est le nom d'une icône (voir [devicons.io](https://devicons.io)), chaque valeur la liste des extensions, noms de fichiers ou noms de dossiers correspondants. Le build échoue si un nom d'icône n'existe pas ou si une même entrée est associée à deux icônes. Seules les icônes référencées sont copiées dans `icons/` : ajouter une association suffit à inclure l'icône au prochain build.
@@ -36,6 +49,7 @@ Pour ajouter une association, éditer [`scripts/mappings.mjs`](scripts/mappings.
 | `scripts/build.mjs` | Découpe le sprite en SVG et génère les JSON |
 | `file_icons.json` / `folder_icons.json` | Tables générées |
 | `icons/` | SVG générés : icônes associées + icônes de dossier génériques |
+| `screenshots/` | Images de présentation (générées par `scripts/screenshots.mjs`) |
 | `plugin.zip` | Archive installable |
 
 ## Licences

@@ -3,14 +3,14 @@
 	"id": "acode.devicons",
 	"name": "Devicons",
 	"main": "main.js",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"license": "Apache-2.0",
 	"readme": "readme.md",
 	"repository": "https://github.com/CR4SH3UR/acode-Devicons-plugin.git",
 	"icon": "icon.png",
 	"files": ["icons", "file_icons.json", "folder_icons.json", "LICENSE-devicons"],
 	"keywords": ["icons", "file-icons", "devicons", "devicons.io", "icon-pack"],
-	"price": 0,
+	"price": 20,
 	"author": {
 		"name": "CR4SH3UR",
 		"github": "CR4SH3UR"
