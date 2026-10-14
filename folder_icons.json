@@ -1,1246 +1,3725 @@
-[{
-  "name": "folder-xml",
-  "folder_name": ["xml"]
-},
-  {
-    "name": "folder-src",
-    "folder_name": ["src",
-      "srcs",
-      "source",
-      "sources",
-      "code"]
-  },
-  {
-    "name": "folder-dist",
-    "folder_name": ["dist",
-      "out",
-      "build",
-      "release",
-      "bin"]
-  },
-  {
-    "name": "folder-css",
-    "folder_name": ["css",
-      "stylesheet",
-      "stylesheets",
-      "style",
-      "styles"]
-  },
-  {
-    "name": "folder-sass",
-    "folder_name": ["sass",
-      "_sass",
-      "scss",
-      "_scss"]
-  },
-  {
-    "name": "folder-images",
-    "folder_name": [
-      "_images",
-      "_image",
-      "_imgs",
-      "_img",
-      "images",
-      "image",
-      "imgs",
-      "img",
-      "icons",
-      "icon",
-      "icos",
-      "ico",
-      "figures",
-      "figure",
-      "figs",
-      "fig",
-      "screenshot",
-      "screenshots",
-      "screengrab",
-      "screengrabs",
-      "pic",
-      "pics",
-      "picture",
-      "pictures"
-    ]
-  },
-  {
-    "name": "folder-scripts",
-    "folder_name": ["script",
-      "scripts"]
-  },
-  {
-    "name": "folder-node",
-    "folder_name": ["node_modules"]
-  },
-  {
-    "name": "folder-javascript",
-    "folder_name": ["js",
-      "javascript",
-      "javascripts"]
-  },
-  {
-    "name": "folder-json",
-    "folder_name": ["json",
-      "jsons"]
-  },
-  {
-    "name": "folder-font",
-    "folder_name": ["font",
-      "fonts"]
-  },
-  {
-    "name": "folder-bower",
-    "folder_name": ["bower_components"]
-  },
-  {
-    "name": "folder-test",
-    "folder_name": [
-      "test",
-      "tests",
-      "testing",
-      "__tests__",
-      "__snapshots__",
-      "__mocks__",
-      "__fixtures__",
-      "__test__",
-      "spec",
-      "specs"
-    ]
-  },
-  {
-    "name": "folder-jinja",
-    "folder_name": ["jinja",
-      "jinja2",
-      "j2"]
-  },
-  {
-    "name": "folder-markdown",
-    "folder_name": ["markdown",
-      "md"]
-  },
-  {
-    "name": "folder-php",
-    "folder_name": ["php"]
-  },
-  {
-    "name": "folder-phpmailer",
-    "folder_name": ["phpmailer"]
-  },
-  {
-    "name": "folder-sublime",
-    "folder_name": ["sublime"]
-  },
-  {
-    "name": "folder-docs",
-    "folder_name": [
-      "_post",
-      "_posts",
-      "doc",
-      "docs",
-      "document",
-      "documents",
-      "Select document",
-      "documentation",
-      "post",
-      "posts",
-      "article",
-      "articles"
-    ]
-  },
-  {
-    "name": "folder-git",
-    "folder_name": [".git",
-      "patches",
-      "githooks",
-      ".githooks",
-      "submodules",
-      ".submodules"]
-  },
-  {
-    "name": "folder-github",
-    "folder_name": [".github",
-      "github"]
-  },
-  {
-    "name": "folder-gitlab",
-    "folder_name": [".gitlab"]
-  },
-  {
-    "name": "folder-vscode",
-    "folder_name": [".vscode",
-      ".vscode-test"]
-  },
-  {
-    "name": "folder-views",
-    "folder_name": ["view",
-      "views",
-      "screen",
-      "screens",
-      "page",
-      "pages",
-      "public_html",
-      "html"]
-  },
-  {
-    "name": "folder-vue",
-    "folder_name": ["vue"]
-  },
-  {
-    "name": "folder-vuepress",
-    "folder_name": [".vuepress"]
-  },
-  {
-    "name": "folder-expo",
-    "folder_name": [".expo",
-      ".expo-shared"]
-  },
-  {
-    "name": "folder-config",
-    "folder_name": [
-      "cfg",
-      "cfgs",
-      "conf",
-      "confs",
-      "config",
-      "configs",
-      "configuration",
-      "configurations",
-      "setting",
-      ".config",
-      ".setting",
-      "settings",
-      ".settings",
-      "META-INF"
-    ]
-  },
-  {
-    "name": "folder-i18n",
-    "folder_name": [
-      "i18n",
-      "internationalization",
-      "lang",
-      "langs",
-      "language",
-      "languages",
-      "locale",
-      "locales",
-      "l10n",
-      "localization",
-      "translation",
-      "translate",
-      "translations",
-      ".tx"
-    ]
-  },
-  {
-    "name": "folder-components",
-    "folder_name": ["components",
-      "widget",
-      "widgets",
-      "fragments"]
-  },
-  {
-    "name": "folder-verdaccio",
-    "folder_name": [".verdaccio",
-      "verdaccio"]
-  },
-  {
-    "name": "folder-aurelia",
-    "folder_name": ["aurelia_project"]
-  },
-  {
-    "name": "folder-resource",
-    "folder_name": ["resource",
-      "resources",
-      "res",
-      "asset",
-      "assets",
-      "static",
-      "report",
-      "reports"]
-  },
-  {
-    "name": "folder-lib",
-    "folder_name": ["lib",
-      "libs",
-      "library",
-      "libraries",
-      "vendor",
-      "vendors",
-      "third-party"]
-  },
-  {
-    "name": "folder-theme",
-    "folder_name": ["themes",
-      "theme",
-      "color",
-      "colors",
-      "design",
-      "designs"]
-  },
-  {
-    "name": "folder-webpack",
-    "folder_name": ["webpack",
-      ".webpack"]
-  },
-  {
-    "name": "folder-global",
-    "folder_name": ["global"]
-  },
-  {
-    "name": "folder-public",
-    "folder_name": ["_site",
-      "public",
-      "www",
-      "wwwroot",
-      "web",
-      "website",
-      "site",
-      "browser",
-      "browsers"]
-  },
-  {
-    "name": "folder-include",
-    "folder_name": ["include",
-      "includes",
-      "_includes",
-      "inc",
-      "partials",
-      "_partials"]
-  },
-  {
-    "name": "folder-docker",
-    "folder_name": ["docker",
-      "dockerfiles",
-      ".docker"]
-  },
-  {
-    "name": "folder-ngrx-effects",
-    "folder_name": ["effects"]
-  },
-  {
-    "name": "folder-ngrx-store",
-    "folder_name": ["store"]
-  },
-  {
-    "name": "folder-ngrx-state",
-    "folder_name": ["states",
-      "state"]
-  },
-  {
-    "name": "folder-ngrx-reducer",
-    "folder_name": ["reducers",
-      "reducer"]
-  },
-  {
-    "name": "folder-ngrx-actions",
-    "folder_name": ["actions"]
-  },
-  {
-    "name": "folder-ngrx-entities",
-    "folder_name": ["entities"]
-  },
-  {
-    "name": "folder-ngrx-selectors",
-    "folder_name": ["selectors"]
-  },
-  {
-    "name": "folder-redux-reducer",
-    "folder_name": ["reducers",
-      "reducer"]
-  },
-  {
-    "name": "folder-redux-actions",
-    "folder_name": ["actions"]
-  },
-  {
-    "name": "folder-redux-selector",
-    "folder_name": ["selectors",
-      "selector"]
-  },
-  {
-    "name": "folder-redux-store",
-    "folder_name": ["store",
-      "stores"]
-  },
-  {
-    "name": "folder-react-components",
-    "folder_name": ["components",
-      "react",
-      "jsx",
-      "reactjs"]
-  },
-  {
-    "name": "folder-database",
-    "folder_name": ["db",
-      "database",
-      "databases",
-      "sql",
-      "data",
-      "_data"]
-  },
-  {
-    "name": "folder-log",
-    "folder_name": ["log",
-      "logs"]
-  },
-  {
-    "name": "folder-target",
-    "folder_name": ["target"]
-  },
-  {
-    "name": "folder-temp",
-    "folder_name": ["temp",
-      ".temp",
-      "tmp",
-      ".tmp",
-      "cached",
-      "cache",
-      ".cache"]
-  },
-  {
-    "name": "folder-aws",
-    "folder_name": ["aws",
-      ".aws"]
-  },
-  {
-    "name": "folder-audio",
-    "folder_name": ["aud",
-      "auds",
-      "audio",
-      "audios",
-      "music",
-      "sound",
-      "sounds"]
-  },
-  {
-    "name": "folder-video",
-    "folder_name": ["vid",
-      "vids",
-      "video",
-      "videos",
-      "movie",
-      "movies"]
-  },
-  {
-    "name": "folder-kubernetes",
-    "folder_name": ["kubernetes",
-      ".kubernetes",
-      "k8s",
-      ".k8s"]
-  },
-  {
-    "name": "folder-import",
-    "folder_name": ["import",
-      "imports",
-      "imported"]
-  },
-  {
-    "name": "folder-export",
-    "folder_name": ["export",
-      "exports",
-      "exported"]
-  },
-  {
-    "name": "folder-wakatime",
-    "folder_name": ["wakatime"]
-  },
-  {
-    "name": "folder-circleci",
-    "folder_name": [".circleci"]
-  },
-  {
-    "name": "folder-wordpress",
-    "folder_name": [".wordpress-org",
-      "wp-content"]
-  },
-  {
-    "name": "folder-gradle",
-    "folder_name": ["gradle",
-      ".gradle"]
-  },
-  {
-    "name": "folder-coverage",
-    "folder_name": [
-      "coverage",
-      ".nyc-output",
-      ".nyc_output",
-      "e2e",
-      "it",
-      "integration-test",
-      "integration-tests",
-      "__integration-test__",
-      "__integration-tests__"
-    ]
-  },
-  {
-    "name": "folder-class",
-    "folder_name": ["class",
-      "classes",
-      "model",
-      "models",
-      "schemas",
-      "schema"]
-  },
-  {
-    "name": "folder-other",
-    "folder_name": ["other",
-      "others",
-      "misc",
-      "miscellaneous",
-      "extra",
-      "extras",
-      "etc"]
-  },
-  {
-    "name": "folder-lua",
-    "folder_name": ["lua"]
-  },
-  {
-    "name": "folder-typescript",
-    "folder_name": ["typescript",
-      "ts",
-      "typings",
-      "@types",
-      "types"]
-  },
-  {
-    "name": "folder-graphql",
-    "folder_name": ["graphql",
-      "gql"]
-  },
-  {
-    "name": "folder-routes",
-    "folder_name": ["routes",
-      "router",
-      "routers"]
-  },
-  {
-    "name": "folder-ci",
-    "folder_name": [".ci",
-      "ci"]
-  },
-  {
-    "name": "folder-benchmark",
-    "folder_name": ["benchmark",
-      "benchmarks",
-      "performance",
-      "measure",
-      "measures",
-      "measurement"]
-  },
-  {
-    "name": "folder-messages",
-    "folder_name": ["messages",
-      "messaging",
-      "forum",
-      "chat",
-      "chats",
-      "conversation",
-      "conversations"]
-  },
-  {
-    "name": "folder-less",
-    "folder_name": ["less"]
-  },
-  {
-    "name": "folder-gulp",
-    "folder_name": ["gulp",
-      "gulp-tasks",
-      "gulpfile.js",
-      "gulpfile.mjs",
-      "gulpfile.ts",
-      "gulpfile.babel.js"]
-  },
-  {
-    "name": "folder-python",
-    "folder_name": ["python",
-      "__pycache__",
-      ".pytest_cache"]
-  },
-  {
-    "name": "folder-mojo",
-    "folder_name": ["mojo"]
-  },
-  {
-    "name": "folder-debug",
-    "folder_name": ["debug",
-      "debugging"]
-  },
-  {
-    "name": "folder-fastlane",
-    "folder_name": ["fastlane"]
-  },
-  {
-    "name": "folder-plugin",
-    "folder_name": [
-      "plugin",
-      "plugins",
-      "_plugins",
-      "extension",
-      "extensions",
-      "addon",
-      "addons",
-      "module",
-      "modules"
-    ]
-  },
-  {
-    "name": "folder-middleware",
-    "folder_name": ["middleware",
-      "middlewares"]
-  },
-  {
-    "name": "folder-controller",
-    "folder_name": [
-      "controller",
-      "controllers",
-      "service",
-      "services",
-      "provider",
-      "providers",
-      "handler",
-      "handlers"
-    ]
-  },
-  {
-    "name": "folder-ansible",
-    "folder_name": ["ansible"]
-  },
-  {
-    "name": "folder-server",
-    "folder_name": ["server",
-      "servers",
-      "backend"]
-  },
-  {
-    "name": "folder-client",
-    "folder_name": ["client",
-      "clients",
-      "frontend",
-      "pwa"]
-  },
-  {
-    "name": "folder-tasks",
-    "folder_name": ["tasks",
-      "tickets"]
-  },
-  {
-    "name": "folder-android",
-    "folder_name": ["android"]
-  },
-  {
-    "name": "folder-ios",
-    "folder_name": ["ios"]
-  },
-  {
-    "name": "folder-upload",
-    "folder_name": ["uploads",
-      "upload"]
-  },
-  {
-    "name": "folder-download",
-    "folder_name": ["downloads",
-      "download"]
-  },
-  {
-    "name": "folder-tools",
-    "folder_name": ["tools",
-      "toolkit",
-      "toolkits",
-      "toolbox",
-      "toolboxes"]
-  },
-  {
-    "name": "folder-helper",
-    "folder_name": ["helpers",
-      "helper"]
-  },
-  {
-    "name": "folder-serverless",
-    "folder_name": [".serverless",
-      "serverless"]
-  },
-  {
-    "name": "folder-api",
-    "folder_name": ["api",
-      "apis",
-      "restapi"]
-  },
-  {
-    "name": "folder-app",
-    "folder_name": ["app",
-      "apps"]
-  },
-  {
-    "name": "folder-apollo",
-    "folder_name": ["apollo",
-      "apollo-client",
-      "apollo-cache",
-      "apollo-config"]
-  },
-  {
-    "name": "folder-archive",
-    "folder_name": [
-      "arc",
-      "arcs",
-      "archive",
-      "archives",
-      "archival",
-      "bkp",
-      "bkps",
-      "bak",
-      "baks",
-      "backup",
-      "backups",
-      "back-up",
-      "back-ups"
-    ]
-  },
-  {
-    "name": "folder-batch",
-    "folder_name": ["batch",
-      "batchs",
-      "batches"]
-  },
-  {
-    "name": "folder-buildkite",
-    "folder_name": ["buildkite",
-      ".buildkite"]
-  },
-  {
-    "name": "folder-cluster",
-    "folder_name": ["cluster",
-      "clusters"]
-  },
-  {
-    "name": "folder-command",
-    "folder_name": ["command",
-      "commands",
-      "cmd",
-      "cli",
-      "clis"]
-  },
-  {
-    "name": "folder-constant",
-    "folder_name": ["constant",
-      "constants"]
-  },
-  {
-    "name": "folder-container",
-    "folder_name": ["container",
-      "containers",
-      ".devcontainer"]
-  },
-  {
-    "name": "folder-content",
-    "folder_name": ["content",
-      "contents"]
-  },
-  {
-    "name": "folder-context",
-    "folder_name": ["context",
-      "contexts"]
-  },
-  {
-    "name": "folder-core",
-    "folder_name": ["core"]
-  },
-  {
-    "name": "folder-delta",
-    "folder_name": ["delta",
-      "deltas",
-      "changes"]
-  },
-  {
-    "name": "folder-dump",
-    "folder_name": ["dump",
-      "dumps"]
-  },
-  {
-    "name": "folder-examples",
-    "folder_name": ["demo",
-      "demos",
-      "example",
-      "examples",
-      "sample",
-      "samples",
-      "sample-data"]
-  },
-  {
-    "name": "folder-environment",
-    "folder_name": [".env",
-      ".environment",
-      "env",
-      "envs",
-      "environment",
-      "environments",
-      ".venv"]
-  },
-  {
-    "name": "folder-functions",
-    "folder_name": [
-      "func",
-      "funcs",
-      "function",
-      "functions",
-      "lambda",
-      "lambdas",
-      "logic",
-      "math",
-      "maths",
-      "calc",
-      "calcs",
-      "calculation",
-      "calculations"
-    ]
-  },
-  {
-    "name": "folder-generator",
-    "folder_name": ["generator",
-      "generators",
-      "generated",
-      "cfn-gen",
-      "gen",
-      "gens",
-      "auto"]
-  },
-  {
-    "name": "folder-hook",
-    "folder_name": ["hook",
-      "hooks",
-      "trigger",
-      "triggers"]
-  },
-  {
-    "name": "folder-job",
-    "folder_name": ["job",
-      "jobs"]
-  },
-  {
-    "name": "folder-keys",
-    "folder_name": ["keys",
-      "key",
-      "token",
-      "tokens",
-      "jwt"]
-  },
-  {
-    "name": "folder-layout",
-    "folder_name": ["layout",
-      "layouts",
-      "_layouts"]
-  },
-  {
-    "name": "folder-mail",
-    "folder_name": ["mail",
-      "mails",
-      "email",
-      "emails",
-      "smtp",
-      "mailers"]
-  },
-  {
-    "name": "folder-mappings",
-    "folder_name": ["mappings",
-      "mapping"]
-  },
-  {
-    "name": "folder-meta",
-    "folder_name": ["meta"]
-  },
-  {
-    "name": "folder-changesets",
-    "folder_name": [".changesets",
-      ".changeset"]
-  },
-  {
-    "name": "folder-packages",
-    "folder_name": ["package",
-      "packages",
-      "pkg",
-      "pkgs"]
-  },
-  {
-    "name": "folder-shared",
-    "folder_name": ["shared",
-      "common"]
-  },
-  {
-    "name": "folder-shader",
-    "folder_name": ["glsl",
-      "hlsl",
-      "shader",
-      "shaders"]
-  },
-  {
-    "name": "folder-stack",
-    "folder_name": ["stack",
-      "stacks"]
-  },
-  {
-    "name": "folder-template",
-    "folder_name": ["template",
-      "templates"]
-  },
-  {
-    "name": "folder-utils",
-    "folder_name": ["util",
-      "utils",
-      "utility",
-      "utilities"]
-  },
-  {
-    "name": "folder-supabase",
-    "folder_name": ["supabase",
-      ".supabase"]
-  },
-  {
-    "name": "folder-private",
-    "folder_name": ["private",
-      ".private"]
-  },
-  {
-    "name": "folder-error",
-    "folder_name": ["error",
-      "errors",
-      "err"]
-  },
-  {
-    "name": "folder-event",
-    "folder_name": ["event",
-      "events"]
-  },
-  {
-    "name": "folder-secure",
-    "folder_name": [
-      "auth",
-      "authentication",
-      "secure",
-      "security",
-      "cert",
-      "certs",
-      "certificate",
-      "certificates",
-      "ssl"
-    ]
-  },
-  {
-    "name": "folder-custom",
-    "folder_name": ["custom",
-      "customs"]
-  },
-  {
-    "name": "folder-mock",
-    "folder_name": [
-      "_draft",
-      "_drafts",
-      "mock",
-      "mocks",
-      "fixture",
-      "fixtures",
-      "draft",
-      "drafts",
-      "concept",
-      "concepts",
-      "sketch",
-      "sketches"
-    ]
-  },
-  {
-    "name": "folder-syntax",
-    "folder_name": ["syntax",
-      "syntaxes",
-      "spellcheck"]
-  },
-  {
-    "name": "folder-vm",
-    "folder_name": ["vm",
-      "vms"]
-  },
-  {
-    "name": "folder-stylus",
-    "folder_name": ["stylus"]
-  },
-  {
-    "name": "folder-flow",
-    "folder_name": ["flow-typed"]
-  },
-  {
-    "name": "folder-rules",
-    "folder_name": ["rule",
-      "rules",
-      "validation",
-      "validations",
-      "validator",
-      "validators"]
-  },
-  {
-    "name": "folder-review",
-    "folder_name": ["review",
-      "reviews",
-      "revisal",
-      "revisals",
-      "reviewed"]
-  },
-  {
-    "name": "folder-animation",
-    "folder_name": ["anim",
-      "anims",
-      "animation",
-      "animations",
-      "animated"]
-  },
-  {
-    "name": "folder-guard",
-    "folder_name": ["guard",
-      "guards"]
-  },
-  {
-    "name": "folder-prisma",
-    "folder_name": ["prisma"]
-  },
-  {
-    "name": "folder-pipe",
-    "folder_name": ["pipe",
-      "pipes"]
-  },
-  {
-    "name": "folder-svg",
-    "folder_name": ["svg",
-      "svgs"]
-  },
-  {
-    "name": "folder-vuex-store",
-    "folder_name": ["store",
-      "stores"]
-  },
-  {
-    "name": "folder-nuxt",
-    "folder_name": ["nuxt",
-      ".nuxt"]
-  },
-  {
-    "name": "folder-vue-directives",
-    "folder_name": ["directives"]
-  },
-  {
-    "name": "folder-vue",
-    "folder_name": ["vue_components"]
-  },
-  {
-    "name": "folder-terraform",
-    "folder_name": ["terraform",
-      ".terraform"]
-  },
-  {
-    "name": "folder-mobile",
-    "folder_name": ["mobile",
-      "mobiles",
-      "portable",
-      "portability"]
-  },
-  {
-    "name": "folder-stencil",
-    "folder_name": [".stencil"]
-  },
-  {
-    "name": "folder-firebase",
-    "folder_name": ["firebase",
-      ".firebase"]
-  },
-  {
-    "name": "folder-svelte",
-    "folder_name": ["svelte",
-      ".svelte-kit"]
-  },
-  {
-    "name": "folder-update",
-    "folder_name": ["update",
-      "updates",
-      "upgrade",
-      "upgrades"]
-  },
-  {
-    "name": "folder-intellij",
-    "folder_name": [".idea"]
-  },
-  {
-    "name": "folder-azure-pipelines",
-    "folder_name": [".azure-pipelines",
-      ".azure-pipelines-ci"]
-  },
-  {
-    "name": "folder-mjml",
-    "folder_name": ["mjml"]
-  },
-  {
-    "name": "folder-admin",
-    "folder_name": ["admin",
-      "manager",
-      "moderator"]
-  },
-  {
-    "name": "folder-scala",
-    "folder_name": ["scala"]
-  },
-  {
-    "name": "folder-connection",
-    "folder_name": ["connection",
-      "connections",
-      "integration",
-      "integrations"]
-  },
-  {
-    "name": "folder-quasar",
-    "folder_name": [".quasar"]
-  },
-  {
-    "name": "folder-next",
-    "folder_name": [".next"]
-  },
-  {
-    "name": "folder-cobol",
-    "folder_name": ["cobol"]
-  },
-  {
-    "name": "folder-yarn",
-    "folder_name": ["yarn",
-      ".yarn"]
-  },
-  {
-    "name": "folder-husky",
-    "folder_name": ["husky",
-      ".husky"]
-  },
-  {
-    "name": "folder-storybook",
-    "folder_name": [".storybook",
-      "storybook",
-      "stories",
-      "__stories__"]
-  },
-  {
-    "name": "folder-base",
-    "folder_name": ["base",
-      ".base",
-      "bases"]
-  },
-  {
-    "name": "folder-cart",
-    "folder_name": ["cart",
-      "shopping-cart",
-      "shopping",
-      "shop"]
-  },
-  {
-    "name": "folder-home",
-    "folder_name": ["home",
-      ".home",
-      "start",
-      ".start"]
-  },
-  {
-    "name": "folder-project",
-    "folder_name": ["project",
-      "projects",
-      ".project",
-      ".projects"]
-  },
-  {
-    "name": "folder-interface",
-    "folder_name": ["interface",
-      "interfaces"]
-  },
-  {
-    "name": "folder-netlify",
-    "folder_name": [".netlify"]
-  },
-  {
-    "name": "folder-contract",
-    "folder_name": [
-      "pact",
-      "pacts",
-      "contract",
-      ".contract",
-      "contracts",
-      "contract-testing",
-      "contract-test",
-      "contract-tests"
-    ]
-  },
-  {
-    "name": "folder-queue",
-    "folder_name": ["queue",
-      "queues",
-      "bull",
-      "mq"]
-  },
-  {
-    "name": "folder-vercel",
-    "folder_name": ["vercel",
-      ".vercel",
-      "now",
-      ".now"]
-  },
-  {
-    "name": "folder-cypress",
-    "folder_name": ["cypress",
-      ".cypress"]
-  },
-  {
-    "name": "folder-decorators",
-    "folder_name": ["decorator",
-      "decorators"]
-  },
-  {
-    "name": "folder-java",
-    "folder_name": ["java"]
-  },
-  {
-    "name": "folder-resolver",
-    "folder_name": ["resolver",
-      "resolvers"]
-  },
-  {
-    "name": "folder-angular",
-    "folder_name": ["angular",
-      ".angular"]
-  },
-  {
-    "name": "folder-unity",
-    "folder_name": ["unity"]
-  },
-  {
-    "name": "folder-pdf",
-    "folder_name": ["pdf",
-      "pdfs"]
-  },
-  {
-    "name": "folder-proto",
-    "folder_name": ["protobufs",
-      "proto"]
-  },
-  {
-    "name": "folder-plastic",
-    "folder_name": ["plastic",
-      ".plastic"]
-  },
-  {
-    "name": "folder-gamemaker",
-    "folder_name": ["gamemaker",
-      "gamemaker2"]
-  },
-  {
-    "name": "folder-mercurial",
-    "folder_name": [".hg",
-      "hghooks",
-      ".hghooks",
-      ".hgext"]
-  },
-  {
-    "name": "folder-godot",
-    "folder_name": ["godot",
-      ".godot",
-      "godot-cpp",
-      ".godot-cpp"]
-  }]
+[
+	{
+		"name": "aarch64-original",
+		"folder_name": [
+			"aarch64",
+			"arm64"
+		]
+	},
+	{
+		"name": "adonisjs-original",
+		"folder_name": [
+			"adonisjs",
+			"adonis"
+		]
+	},
+	{
+		"name": "aerospike-original",
+		"folder_name": [
+			"aerospike"
+		]
+	},
+	{
+		"name": "aframe-original",
+		"folder_name": [
+			"aframe",
+			"a-frame"
+		]
+	},
+	{
+		"name": "aftereffects-original",
+		"folder_name": [
+			"aftereffects",
+			"adobeaftereffects",
+			"ae"
+		]
+	},
+	{
+		"name": "akka-original",
+		"folder_name": [
+			"akka",
+			"akka-framework"
+		]
+	},
+	{
+		"name": "algolia-original",
+		"folder_name": [
+			"algolia"
+		]
+	},
+	{
+		"name": "almalinux-original",
+		"folder_name": [
+			"almalinux"
+		]
+	},
+	{
+		"name": "alpinejs-original",
+		"folder_name": [
+			"alpinejs",
+			"alpine"
+		]
+	},
+	{
+		"name": "amazonwebservices-original-wordmark",
+		"folder_name": [
+			"amazonwebservices",
+			"aws"
+		]
+	},
+	{
+		"name": "anaconda-original",
+		"folder_name": [
+			"anaconda"
+		]
+	},
+	{
+		"name": "android-original",
+		"folder_name": [
+			"android"
+		]
+	},
+	{
+		"name": "androidstudio-original",
+		"folder_name": [
+			"androidstudio"
+		]
+	},
+	{
+		"name": "angular-original",
+		"folder_name": [
+			".angular",
+			"angular"
+		]
+	},
+	{
+		"name": "angularjs-original",
+		"folder_name": [
+			"angularjs"
+		]
+	},
+	{
+		"name": "angularmaterial-original",
+		"folder_name": [
+			"angularmaterial"
+		]
+	},
+	{
+		"name": "ansible-original",
+		"folder_name": [
+			"ansible"
+		]
+	},
+	{
+		"name": "ansys-original",
+		"folder_name": [
+			"ansys"
+		]
+	},
+	{
+		"name": "antdesign-original",
+		"folder_name": [
+			"antdesign"
+		]
+	},
+	{
+		"name": "apache-original",
+		"folder_name": [
+			"apache"
+		]
+	},
+	{
+		"name": "apacheairflow-original",
+		"folder_name": [
+			"apacheairflow",
+			"airflow"
+		]
+	},
+	{
+		"name": "apachekafka-original",
+		"folder_name": [
+			"apachekafka"
+		]
+	},
+	{
+		"name": "apachespark-original",
+		"folder_name": [
+			"apachespark"
+		]
+	},
+	{
+		"name": "apex-original",
+		"folder_name": [
+			"apex"
+		]
+	},
+	{
+		"name": "apl-original",
+		"folder_name": [
+			"apl"
+		]
+	},
+	{
+		"name": "apollographql-original",
+		"folder_name": [
+			"apollographql",
+			"apollo"
+		]
+	},
+	{
+		"name": "appcelerator-original",
+		"folder_name": [
+			"appcelerator"
+		]
+	},
+	{
+		"name": "apple-original",
+		"folder_name": [
+			"ios",
+			"macos",
+			"apple"
+		]
+	},
+	{
+		"name": "appwrite-original",
+		"folder_name": [
+			"appwrite"
+		]
+	},
+	{
+		"name": "archlinux-original",
+		"folder_name": [
+			"archlinux"
+		]
+	},
+	{
+		"name": "arduino-original",
+		"folder_name": [
+			"arduino"
+		]
+	},
+	{
+		"name": "argocd-original",
+		"folder_name": [
+			"argocd"
+		]
+	},
+	{
+		"name": "artixlinux-original",
+		"folder_name": [
+			"artixlinux",
+			"artix"
+		]
+	},
+	{
+		"name": "astro-original",
+		"folder_name": [
+			"astro"
+		]
+	},
+	{
+		"name": "atom-original",
+		"folder_name": [
+			"atom"
+		]
+	},
+	{
+		"name": "awk-original",
+		"folder_name": [
+			"awk"
+		]
+	},
+	{
+		"name": "axios-plain",
+		"folder_name": [
+			"axios"
+		]
+	},
+	{
+		"name": "azure-original",
+		"folder_name": [
+			"azure",
+			"microsoftazure"
+		]
+	},
+	{
+		"name": "azuredevops-original",
+		"folder_name": [
+			"azuredevops",
+			"azure-devops"
+		]
+	},
+	{
+		"name": "azuresqldatabase-original",
+		"folder_name": [
+			"azuresqldatabase",
+			"azure-sql-database"
+		]
+	},
+	{
+		"name": "babel-original",
+		"folder_name": [
+			"babel",
+			"babeljs"
+		]
+	},
+	{
+		"name": "babylonjs-original",
+		"folder_name": [
+			"babylonjs",
+			"babylon.js"
+		]
+	},
+	{
+		"name": "backbonejs-original",
+		"folder_name": [
+			"backbonejs"
+		]
+	},
+	{
+		"name": "ballerina-original",
+		"folder_name": [
+			"ballerina",
+			"bal"
+		]
+	},
+	{
+		"name": "bamboo-original",
+		"folder_name": [
+			"bamboo",
+			"atlassianbamboo"
+		]
+	},
+	{
+		"name": "bash-plain",
+		"folder_name": [
+			"bash",
+			"bourneagainshell"
+		]
+	},
+	{
+		"name": "bazel-original",
+		"folder_name": [
+			"bazel",
+			"buildtoolbazel"
+		]
+	},
+	{
+		"name": "beats-original",
+		"folder_name": [
+			"beats"
+		]
+	},
+	{
+		"name": "behance-original",
+		"folder_name": [
+			"behance"
+		]
+	},
+	{
+		"name": "bevyengine-original",
+		"folder_name": [
+			"bevyengine",
+			"bevy"
+		]
+	},
+	{
+		"name": "biome-original",
+		"folder_name": [
+			"biome",
+			"biomejs"
+		]
+	},
+	{
+		"name": "bitbucket-original",
+		"folder_name": [
+			"bitbucket",
+			"atlassianbitbucket"
+		]
+	},
+	{
+		"name": "blazor-original",
+		"folder_name": [
+			"blazor"
+		]
+	},
+	{
+		"name": "blender-original",
+		"folder_name": [
+			"blender"
+		]
+	},
+	{
+		"name": "bootstrap-original",
+		"folder_name": [
+			"bootstrap"
+		]
+	},
+	{
+		"name": "bower-original",
+		"folder_name": [
+			"bower"
+		]
+	},
+	{
+		"name": "browserstack-original",
+		"folder_name": [
+			"browserstack"
+		]
+	},
+	{
+		"name": "bulma-plain",
+		"folder_name": [
+			"bulma",
+			"bulmacss"
+		]
+	},
+	{
+		"name": "bun-original",
+		"folder_name": [
+			"bun"
+		]
+	},
+	{
+		"name": "c-original",
+		"folder_name": [
+			"c"
+		]
+	},
+	{
+		"name": "cairo-original",
+		"folder_name": [
+			"cairo",
+			"cairographics"
+		]
+	},
+	{
+		"name": "cakephp-original",
+		"folder_name": [
+			"cakephp"
+		]
+	},
+	{
+		"name": "canva-original",
+		"folder_name": [
+			"canva"
+		]
+	},
+	{
+		"name": "capacitor-original",
+		"folder_name": [
+			"capacitor",
+			"capacitorjs"
+		]
+	},
+	{
+		"name": "carbon-original",
+		"folder_name": [
+			"carbon"
+		]
+	},
+	{
+		"name": "cassandra-original",
+		"folder_name": [
+			"cassandra"
+		]
+	},
+	{
+		"name": "centos-original",
+		"folder_name": [
+			"centos"
+		]
+	},
+	{
+		"name": "ceylon-original",
+		"folder_name": [
+			"ceylon",
+			"eclipseceylon",
+			"ceylonlang"
+		]
+	},
+	{
+		"name": "chakraui-original",
+		"folder_name": [
+			"chakraui"
+		]
+	},
+	{
+		"name": "chartjs-original",
+		"folder_name": [
+			"chartjs",
+			"chart.js"
+		]
+	},
+	{
+		"name": "chrome-original",
+		"folder_name": [
+			"chrome",
+			"googlechrome"
+		]
+	},
+	{
+		"name": "circleci-plain",
+		"folder_name": [
+			".circleci",
+			"circleci"
+		]
+	},
+	{
+		"name": "clarity-original",
+		"folder_name": [
+			"clarity",
+			"clarity-lang"
+		]
+	},
+	{
+		"name": "clickhouse-original",
+		"folder_name": [
+			"clickhouse"
+		]
+	},
+	{
+		"name": "clion-original",
+		"folder_name": [
+			"clion"
+		]
+	},
+	{
+		"name": "clojure-original",
+		"folder_name": [
+			"clojure"
+		]
+	},
+	{
+		"name": "clojurescript-original",
+		"folder_name": [
+			"clojurescript"
+		]
+	},
+	{
+		"name": "cloudflare-original",
+		"folder_name": [
+			"cloudflare"
+		]
+	},
+	{
+		"name": "cloudflareworkers-original",
+		"folder_name": [
+			"cloudflareworkers"
+		]
+	},
+	{
+		"name": "cloudrun-original",
+		"folder_name": [
+			"cloudrun"
+		]
+	},
+	{
+		"name": "cmake-original",
+		"folder_name": [
+			"cmake"
+		]
+	},
+	{
+		"name": "cobol-original",
+		"folder_name": [
+			"cobol"
+		]
+	},
+	{
+		"name": "codeac-original",
+		"folder_name": [
+			"codeac",
+			"codeacio"
+		]
+	},
+	{
+		"name": "codecov-plain",
+		"folder_name": [
+			"codecov"
+		]
+	},
+	{
+		"name": "codeigniter-plain",
+		"folder_name": [
+			"codeigniter"
+		]
+	},
+	{
+		"name": "codepen-original",
+		"folder_name": [
+			"codepen"
+		]
+	},
+	{
+		"name": "coffeescript-original",
+		"folder_name": [
+			"coffeescript"
+		]
+	},
+	{
+		"name": "composer-original",
+		"folder_name": [
+			"composer"
+		]
+	},
+	{
+		"name": "confluence-original",
+		"folder_name": [
+			"confluence",
+			"atlassianconfluence"
+		]
+	},
+	{
+		"name": "consul-original",
+		"folder_name": [
+			"consul"
+		]
+	},
+	{
+		"name": "contao-original",
+		"folder_name": [
+			"contao"
+		]
+	},
+	{
+		"name": "corejs-original",
+		"folder_name": [
+			"corejs",
+			"core-js",
+			"core.js"
+		]
+	},
+	{
+		"name": "cosmosdb-original",
+		"folder_name": [
+			"cosmosdb",
+			"azurecosmosdb"
+		]
+	},
+	{
+		"name": "couchbase-original",
+		"folder_name": [
+			"couchbase"
+		]
+	},
+	{
+		"name": "couchdb-original",
+		"folder_name": [
+			"couchdb",
+			"apachecouchdb"
+		]
+	},
+	{
+		"name": "cpanel-original",
+		"folder_name": [
+			"cpanel"
+		]
+	},
+	{
+		"name": "cplusplus-original",
+		"folder_name": [
+			"cplusplus",
+			"c++",
+			"cpp"
+		]
+	},
+	{
+		"name": "crystal-original",
+		"folder_name": [
+			"crystal",
+			"crystallang"
+		]
+	},
+	{
+		"name": "csharp-original",
+		"folder_name": [
+			"csharp"
+		]
+	},
+	{
+		"name": "css3-original",
+		"folder_name": [
+			"css",
+			"css3",
+			"cascadingstylesheets3"
+		]
+	},
+	{
+		"name": "cucumber-plain",
+		"folder_name": [
+			"cucumber",
+			"cucumberjs"
+		]
+	},
+	{
+		"name": "cypressio-original",
+		"folder_name": [
+			"cypress",
+			"cypressio"
+		]
+	},
+	{
+		"name": "d3js-original",
+		"folder_name": [
+			"d3js"
+		]
+	},
+	{
+		"name": "dart-original",
+		"folder_name": [
+			"dart",
+			"googledart"
+		]
+	},
+	{
+		"name": "datadog-original",
+		"folder_name": [
+			"datadog"
+		]
+	},
+	{
+		"name": "datagrip-original",
+		"folder_name": [
+			"datagrip"
+		]
+	},
+	{
+		"name": "dataspell-original",
+		"folder_name": [
+			"dataspell"
+		]
+	},
+	{
+		"name": "datatables-original",
+		"folder_name": [
+			"datatables"
+		]
+	},
+	{
+		"name": "dbeaver-original",
+		"folder_name": [
+			"dbeaver"
+		]
+	},
+	{
+		"name": "debian-original",
+		"folder_name": [
+			"debian"
+		]
+	},
+	{
+		"name": "delphi-original",
+		"folder_name": [
+			"delphi",
+			"embarcadero"
+		]
+	},
+	{
+		"name": "denojs-original",
+		"folder_name": [
+			"denojs"
+		]
+	},
+	{
+		"name": "detaspace-original",
+		"folder_name": [
+			"detaspace",
+			"deta"
+		]
+	},
+	{
+		"name": "devicon-original",
+		"folder_name": [
+			"devicon"
+		]
+	},
+	{
+		"name": "digitalocean-original",
+		"folder_name": [
+			"digitalocean"
+		]
+	},
+	{
+		"name": "discloud-original",
+		"folder_name": [
+			"discloud"
+		]
+	},
+	{
+		"name": "discordjs-original",
+		"folder_name": [
+			"discordjs"
+		]
+	},
+	{
+		"name": "django-plain",
+		"folder_name": [
+			"django"
+		]
+	},
+	{
+		"name": "djangorest-original",
+		"folder_name": [
+			"djangorest"
+		]
+	},
+	{
+		"name": "docker-original",
+		"folder_name": [
+			".docker",
+			"docker"
+		]
+	},
+	{
+		"name": "doctrine-original",
+		"folder_name": [
+			"doctrine"
+		]
+	},
+	{
+		"name": "dot-net-original",
+		"folder_name": [
+			"dot-net",
+			"dotnet",
+			".net"
+		]
+	},
+	{
+		"name": "dotnetcore-original",
+		"folder_name": [
+			"dotnetcore",
+			".netcore"
+		]
+	},
+	{
+		"name": "dovecot-original",
+		"folder_name": [
+			"dovecot"
+		]
+	},
+	{
+		"name": "dreamweaver-original",
+		"folder_name": [
+			"dreamweaver"
+		]
+	},
+	{
+		"name": "dropwizard-original",
+		"folder_name": [
+			"dropwizard"
+		]
+	},
+	{
+		"name": "drupal-original",
+		"folder_name": [
+			"drupal"
+		]
+	},
+	{
+		"name": "duckdb-original",
+		"folder_name": [
+			"duckdb"
+		]
+	},
+	{
+		"name": "dyalog-original",
+		"folder_name": [
+			"dyalog"
+		]
+	},
+	{
+		"name": "dynamodb-original",
+		"folder_name": [
+			"dynamodb"
+		]
+	},
+	{
+		"name": "dynatrace-original",
+		"folder_name": [
+			"dynatrace"
+		]
+	},
+	{
+		"name": "eclipse-original",
+		"folder_name": [
+			"eclipse"
+		]
+	},
+	{
+		"name": "ecto-original",
+		"folder_name": [
+			"ecto"
+		]
+	},
+	{
+		"name": "elasticsearch-original",
+		"folder_name": [
+			"elasticsearch"
+		]
+	},
+	{
+		"name": "electron-original",
+		"folder_name": [
+			"electron",
+			"electronjs"
+		]
+	},
+	{
+		"name": "eleventy-original",
+		"folder_name": [
+			"eleventy",
+			"11ty"
+		]
+	},
+	{
+		"name": "elixir-original",
+		"folder_name": [
+			"elixir",
+			"elexirlang"
+		]
+	},
+	{
+		"name": "elm-original",
+		"folder_name": [
+			"elm",
+			"elmlang"
+		]
+	},
+	{
+		"name": "emacs-original",
+		"folder_name": [
+			"emacs",
+			"editingmacros"
+		]
+	},
+	{
+		"name": "embeddedc-original",
+		"folder_name": [
+			"embeddedc"
+		]
+	},
+	{
+		"name": "ember-original",
+		"folder_name": [
+			"ember",
+			"ember.js",
+			"emberjs"
+		]
+	},
+	{
+		"name": "entityframeworkcore-original",
+		"folder_name": [
+			"entityframeworkcore"
+		]
+	},
+	{
+		"name": "envoy-original",
+		"folder_name": [
+			"envoy",
+			"envoyproxy"
+		]
+	},
+	{
+		"name": "erlang-original",
+		"folder_name": [
+			"erlang"
+		]
+	},
+	{
+		"name": "eslint-original",
+		"folder_name": [
+			"eslint"
+		]
+	},
+	{
+		"name": "expo-original",
+		"folder_name": [
+			"expo"
+		]
+	},
+	{
+		"name": "express-original",
+		"folder_name": [
+			"express",
+			"expressjs"
+		]
+	},
+	{
+		"name": "facebook-original",
+		"folder_name": [
+			"facebook"
+		]
+	},
+	{
+		"name": "fastapi-original",
+		"folder_name": [
+			"fastapi"
+		]
+	},
+	{
+		"name": "fastify-original",
+		"folder_name": [
+			"fastify"
+		]
+	},
+	{
+		"name": "faunadb-original",
+		"folder_name": [
+			"faunadb",
+			"fauna"
+		]
+	},
+	{
+		"name": "feathersjs-original",
+		"folder_name": [
+			"feathersjs"
+		]
+	},
+	{
+		"name": "fedora-original",
+		"folder_name": [
+			"fedora"
+		]
+	},
+	{
+		"name": "fiber-original",
+		"folder_name": [
+			"fiber",
+			"gofiber"
+		]
+	},
+	{
+		"name": "figma-original",
+		"folder_name": [
+			"figma"
+		]
+	},
+	{
+		"name": "filamentphp-original",
+		"folder_name": [
+			"filamentphp"
+		]
+	},
+	{
+		"name": "filezilla-original",
+		"folder_name": [
+			"filezilla"
+		]
+	},
+	{
+		"name": "firebase-original",
+		"folder_name": [
+			".firebase",
+			"firebase"
+		]
+	},
+	{
+		"name": "firebird-original",
+		"folder_name": [
+			"firebird"
+		]
+	},
+	{
+		"name": "firefox-original",
+		"folder_name": [
+			"firefox",
+			"mozillafirefox"
+		]
+	},
+	{
+		"name": "flask-original",
+		"folder_name": [
+			"flask"
+		]
+	},
+	{
+		"name": "flutter-original",
+		"folder_name": [
+			"flutter",
+			".dart_tool"
+		]
+	},
+	{
+		"name": "forgejo-original",
+		"folder_name": [
+			"forgejo"
+		]
+	},
+	{
+		"name": "fortran-original",
+		"folder_name": [
+			"fortran"
+		]
+	},
+	{
+		"name": "foundation-original",
+		"folder_name": [
+			"foundation"
+		]
+	},
+	{
+		"name": "framermotion-original",
+		"folder_name": [
+			"framermotion",
+			"framer-motion",
+			"framer"
+		]
+	},
+	{
+		"name": "framework7-original",
+		"folder_name": [
+			"framework7"
+		]
+	},
+	{
+		"name": "fsharp-original",
+		"folder_name": [
+			"fsharp"
+		]
+	},
+	{
+		"name": "fusion-original",
+		"folder_name": [
+			"fusion"
+		]
+	},
+	{
+		"name": "gardener-original",
+		"folder_name": [
+			"gardener"
+		]
+	},
+	{
+		"name": "gatling-original",
+		"folder_name": [
+			"gatling"
+		]
+	},
+	{
+		"name": "gatsby-original",
+		"folder_name": [
+			"gatsby",
+			"gatsbyjs"
+		]
+	},
+	{
+		"name": "gazebo-original",
+		"folder_name": [
+			"gazebo"
+		]
+	},
+	{
+		"name": "gcc-original",
+		"folder_name": [
+			"gcc",
+			"gnucompilercollection"
+		]
+	},
+	{
+		"name": "gentoo-original",
+		"folder_name": [
+			"gentoo"
+		]
+	},
+	{
+		"name": "ghost-original",
+		"folder_name": [
+			"ghost"
+		]
+	},
+	{
+		"name": "gimp-original",
+		"folder_name": [
+			"gimp"
+		]
+	},
+	{
+		"name": "git-original",
+		"folder_name": [
+			".git",
+			"git"
+		]
+	},
+	{
+		"name": "gitbook-original",
+		"folder_name": [
+			"gitbook"
+		]
+	},
+	{
+		"name": "github-original",
+		"folder_name": [
+			".github",
+			"github"
+		]
+	},
+	{
+		"name": "githubactions-original",
+		"folder_name": [
+			"workflows",
+			"githubactions"
+		]
+	},
+	{
+		"name": "githubcodespaces-original",
+		"folder_name": [
+			"githubcodespaces"
+		]
+	},
+	{
+		"name": "gitkraken-original",
+		"folder_name": [
+			"gitkraken"
+		]
+	},
+	{
+		"name": "gitlab-original",
+		"folder_name": [
+			".gitlab",
+			"gitlab"
+		]
+	},
+	{
+		"name": "gitpod-original",
+		"folder_name": [
+			"gitpod",
+			"gitpod-io"
+		]
+	},
+	{
+		"name": "gitter-plain",
+		"folder_name": [
+			"gitter"
+		]
+	},
+	{
+		"name": "gleam-original",
+		"folder_name": [
+			"gleam"
+		]
+	},
+	{
+		"name": "glitch-original",
+		"folder_name": [
+			"glitch"
+		]
+	},
+	{
+		"name": "go-original",
+		"folder_name": [
+			"go",
+			"golang"
+		]
+	},
+	{
+		"name": "godot-original",
+		"folder_name": [
+			".godot",
+			"godot"
+		]
+	},
+	{
+		"name": "goland-original",
+		"folder_name": [
+			"goland"
+		]
+	},
+	{
+		"name": "google-original",
+		"folder_name": [
+			"google"
+		]
+	},
+	{
+		"name": "googlecloud-original",
+		"folder_name": [
+			"googlecloud"
+		]
+	},
+	{
+		"name": "googlecolab-original",
+		"folder_name": [
+			"googlecolab",
+			"googlecolaboratory"
+		]
+	},
+	{
+		"name": "gradle-original",
+		"folder_name": [
+			".gradle",
+			"gradle",
+			"apachegradle",
+			"gradlebuildtool"
+		]
+	},
+	{
+		"name": "grafana-original",
+		"folder_name": [
+			"grafana"
+		]
+	},
+	{
+		"name": "grails-original",
+		"folder_name": [
+			"grails"
+		]
+	},
+	{
+		"name": "graphql-plain",
+		"folder_name": [
+			"graphql"
+		]
+	},
+	{
+		"name": "groovy-original",
+		"folder_name": [
+			"groovy",
+			"groovylang",
+			"apachegroovy"
+		]
+	},
+	{
+		"name": "grpc-original",
+		"folder_name": [
+			"grpc",
+			"grpcio"
+		]
+	},
+	{
+		"name": "grunt-original",
+		"folder_name": [
+			"grunt",
+			"gruntjs"
+		]
+	},
+	{
+		"name": "gulp-plain",
+		"folder_name": [
+			"gulp",
+			"gulpjs"
+		]
+	},
+	{
+		"name": "hadoop-original",
+		"folder_name": [
+			"hadoop"
+		]
+	},
+	{
+		"name": "handlebars-original",
+		"folder_name": [
+			"handlebars",
+			"handlebarsjs"
+		]
+	},
+	{
+		"name": "harbor-original",
+		"folder_name": [
+			"harbor"
+		]
+	},
+	{
+		"name": "hardhat-original",
+		"folder_name": [
+			"hardhat"
+		]
+	},
+	{
+		"name": "harvester-original",
+		"folder_name": [
+			"harvester",
+			"harvesterhci"
+		]
+	},
+	{
+		"name": "haskell-original",
+		"folder_name": [
+			"haskell"
+		]
+	},
+	{
+		"name": "haxe-original",
+		"folder_name": [
+			"haxe"
+		]
+	},
+	{
+		"name": "helm-original",
+		"folder_name": [
+			"charts",
+			"helm"
+		]
+	},
+	{
+		"name": "heroku-original",
+		"folder_name": [
+			"heroku"
+		]
+	},
+	{
+		"name": "hibernate-original",
+		"folder_name": [
+			"hibernate"
+		]
+	},
+	{
+		"name": "homebrew-original",
+		"folder_name": [
+			"homebrew"
+		]
+	},
+	{
+		"name": "hoppscotch-original",
+		"folder_name": [
+			"hoppscotch"
+		]
+	},
+	{
+		"name": "html5-original",
+		"folder_name": [
+			"html",
+			"html5",
+			"hypertextmarkdownlanguage5"
+		]
+	},
+	{
+		"name": "htmx-original",
+		"folder_name": [
+			"htmx"
+		]
+	},
+	{
+		"name": "hugo-original",
+		"folder_name": [
+			"hugo",
+			"gohugo"
+		]
+	},
+	{
+		"name": "hyperv-original",
+		"folder_name": [
+			"hyperv",
+			"hyper-v"
+		]
+	},
+	{
+		"name": "ie10-original",
+		"folder_name": [
+			"ie10",
+			"internetexplorer10"
+		]
+	},
+	{
+		"name": "ifttt-original",
+		"folder_name": [
+			"ifttt",
+			"ifthisthenthat"
+		]
+	},
+	{
+		"name": "illustrator-original",
+		"folder_name": [
+			"illustrator",
+			"adobeillustrator"
+		]
+	},
+	{
+		"name": "inertiajs-original",
+		"folder_name": [
+			"inertiajs",
+			"inertia.js"
+		]
+	},
+	{
+		"name": "influxdb-original",
+		"folder_name": [
+			"influxdb"
+		]
+	},
+	{
+		"name": "inkscape-original",
+		"folder_name": [
+			"inkscape"
+		]
+	},
+	{
+		"name": "insomnia-original",
+		"folder_name": [
+			"insomnia"
+		]
+	},
+	{
+		"name": "intellij-original",
+		"folder_name": [
+			".idea",
+			"intellij",
+			"intellijidea"
+		]
+	},
+	{
+		"name": "ionic-original",
+		"folder_name": [
+			"ionic"
+		]
+	},
+	{
+		"name": "jaegertracing-original",
+		"folder_name": [
+			"jaegertracing",
+			"jaeger"
+		]
+	},
+	{
+		"name": "jamstack-original",
+		"folder_name": [
+			"jamstack"
+		]
+	},
+	{
+		"name": "jasmine-original",
+		"folder_name": [
+			"jasmine",
+			"jasminejs"
+		]
+	},
+	{
+		"name": "java-original",
+		"folder_name": [
+			"java"
+		]
+	},
+	{
+		"name": "javascript-original",
+		"folder_name": [
+			"js",
+			"javascript",
+			"ecmascript"
+		]
+	},
+	{
+		"name": "jeet-original",
+		"folder_name": [
+			"jeet"
+		]
+	},
+	{
+		"name": "jekyll-original",
+		"folder_name": [
+			"jekyll",
+			"jestjs"
+		]
+	},
+	{
+		"name": "jenkins-original",
+		"folder_name": [
+			"jenkins",
+			"hudson"
+		]
+	},
+	{
+		"name": "jest-plain",
+		"folder_name": [
+			"__tests__",
+			"__mocks__",
+			"jest"
+		]
+	},
+	{
+		"name": "jetbrains-original",
+		"folder_name": [
+			"jetbrains",
+			"intellijsoftware"
+		]
+	},
+	{
+		"name": "jetpackcompose-original",
+		"folder_name": [
+			"jetpackcompose"
+		]
+	},
+	{
+		"name": "jhipster-original",
+		"folder_name": [
+			"jhipster"
+		]
+	},
+	{
+		"name": "jira-original",
+		"folder_name": [
+			"jira",
+			"atlassianjira"
+		]
+	},
+	{
+		"name": "jiraalign-original",
+		"folder_name": [
+			"jiraalign"
+		]
+	},
+	{
+		"name": "jquery-original",
+		"folder_name": [
+			"jquery",
+			"jqueryjs"
+		]
+	},
+	{
+		"name": "json-original",
+		"folder_name": [
+			"json"
+		]
+	},
+	{
+		"name": "jule-original",
+		"folder_name": [
+			"jule",
+			"julelang"
+		]
+	},
+	{
+		"name": "julia-original",
+		"folder_name": [
+			"julia",
+			"julialang"
+		]
+	},
+	{
+		"name": "junit-original",
+		"folder_name": [
+			"junit"
+		]
+	},
+	{
+		"name": "jupyter-original",
+		"folder_name": [
+			".ipynb_checkpoints",
+			"jupyter",
+			"jupyternotebook"
+		]
+	},
+	{
+		"name": "k3os-original",
+		"folder_name": [
+			"k3os"
+		]
+	},
+	{
+		"name": "k3s-original",
+		"folder_name": [
+			"k3s"
+		]
+	},
+	{
+		"name": "k6-original",
+		"folder_name": [
+			"k6"
+		]
+	},
+	{
+		"name": "kaggle-original",
+		"folder_name": [
+			"kaggle"
+		]
+	},
+	{
+		"name": "kaldi-original",
+		"folder_name": [
+			"kaldi"
+		]
+	},
+	{
+		"name": "kalilinux-original",
+		"folder_name": [
+			"kalilinux",
+			"kali"
+		]
+	},
+	{
+		"name": "karatelabs-original",
+		"folder_name": [
+			"karatelabs",
+			"karate"
+		]
+	},
+	{
+		"name": "karma-original",
+		"folder_name": [
+			"karma",
+			"karmarunner",
+			"karmajs"
+		]
+	},
+	{
+		"name": "kdeneon-original",
+		"folder_name": [
+			"kdeneon"
+		]
+	},
+	{
+		"name": "keras-original",
+		"folder_name": [
+			"keras"
+		]
+	},
+	{
+		"name": "kibana-original",
+		"folder_name": [
+			"kibana"
+		]
+	},
+	{
+		"name": "knexjs-original",
+		"folder_name": [
+			"knexjs"
+		]
+	},
+	{
+		"name": "knockout-plain-wordmark",
+		"folder_name": [
+			"knockout",
+			"knockoutjs"
+		]
+	},
+	{
+		"name": "kotlin-original",
+		"folder_name": [
+			"kotlin",
+			"kotlinlang"
+		]
+	},
+	{
+		"name": "krakenjs-original",
+		"folder_name": [
+			"krakenjs",
+			"kraken"
+		]
+	},
+	{
+		"name": "ktor-original",
+		"folder_name": [
+			"ktor"
+		]
+	},
+	{
+		"name": "kubeflow-original",
+		"folder_name": [
+			"kubeflow"
+		]
+	},
+	{
+		"name": "kubernetes-original",
+		"folder_name": [
+			"k8s",
+			"kubernetes"
+		]
+	},
+	{
+		"name": "labview-original",
+		"folder_name": [
+			"labview"
+		]
+	},
+	{
+		"name": "laminas-original",
+		"folder_name": [
+			"laminas"
+		]
+	},
+	{
+		"name": "laravel-original",
+		"folder_name": [
+			"laravel"
+		]
+	},
+	{
+		"name": "laraveljetstream-original",
+		"folder_name": [
+			"laraveljetstream",
+			"jetstream"
+		]
+	},
+	{
+		"name": "latex-original",
+		"folder_name": [
+			"latex"
+		]
+	},
+	{
+		"name": "leetcode-original",
+		"folder_name": [
+			"leetcode"
+		]
+	},
+	{
+		"name": "less-plain-wordmark",
+		"folder_name": [
+			"less",
+			"lesscss"
+		]
+	},
+	{
+		"name": "libgdx-original",
+		"folder_name": [
+			"libgdx"
+		]
+	},
+	{
+		"name": "linkedin-original",
+		"folder_name": [
+			"linkedin"
+		]
+	},
+	{
+		"name": "linux-original",
+		"folder_name": [
+			"bin",
+			"linux"
+		]
+	},
+	{
+		"name": "linuxmint-original",
+		"folder_name": [
+			"linuxmint"
+		]
+	},
+	{
+		"name": "liquibase-original",
+		"folder_name": [
+			"liquibase"
+		]
+	},
+	{
+		"name": "livewire-original",
+		"folder_name": [
+			"livewire",
+			"laravel-livewire"
+		]
+	},
+	{
+		"name": "llvm-original",
+		"folder_name": [
+			"llvm"
+		]
+	},
+	{
+		"name": "lodash-original",
+		"folder_name": [
+			"lodash"
+		]
+	},
+	{
+		"name": "logstash-original",
+		"folder_name": [
+			"logstash"
+		]
+	},
+	{
+		"name": "love2d-original",
+		"folder_name": [
+			"love2d"
+		]
+	},
+	{
+		"name": "lua-original",
+		"folder_name": [
+			"lua",
+			"lualang"
+		]
+	},
+	{
+		"name": "lumen-original",
+		"folder_name": [
+			"lumen",
+			"laravel.lumen"
+		]
+	},
+	{
+		"name": "magento-original",
+		"folder_name": [
+			"magento"
+		]
+	},
+	{
+		"name": "mapbox-original",
+		"folder_name": [
+			"mapbox"
+		]
+	},
+	{
+		"name": "mariadb-original",
+		"folder_name": [
+			"mariadb"
+		]
+	},
+	{
+		"name": "markdown-original",
+		"folder_name": [
+			"docs",
+			"doc",
+			"markdown",
+			"md"
+		]
+	},
+	{
+		"name": "materializecss-original",
+		"folder_name": [
+			"materializecss",
+			"materialize",
+			"materialize-css"
+		]
+	},
+	{
+		"name": "materialui-original",
+		"folder_name": [
+			"materialui",
+			"mui"
+		]
+	},
+	{
+		"name": "matlab-original",
+		"folder_name": [
+			"matlab"
+		]
+	},
+	{
+		"name": "matplotlib-original",
+		"folder_name": [
+			"matplotlib"
+		]
+	},
+	{
+		"name": "mattermost-original",
+		"folder_name": [
+			"mattermost"
+		]
+	},
+	{
+		"name": "maven-original",
+		"folder_name": [
+			"maven",
+			"apachemaven",
+			"mvn"
+		]
+	},
+	{
+		"name": "maya-original",
+		"folder_name": [
+			"maya"
+		]
+	},
+	{
+		"name": "memcached-original",
+		"folder_name": [
+			"memcached"
+		]
+	},
+	{
+		"name": "mercurial-original",
+		"folder_name": [
+			"mercurial"
+		]
+	},
+	{
+		"name": "meteor-original",
+		"folder_name": [
+			"meteor",
+			"meteorjs"
+		]
+	},
+	{
+		"name": "microsoftsqlserver-original",
+		"folder_name": [
+			"microsoftsqlserver",
+			"msql",
+			"mssql"
+		]
+	},
+	{
+		"name": "minitab-original",
+		"folder_name": [
+			"minitab"
+		]
+	},
+	{
+		"name": "mithril-original",
+		"folder_name": [
+			"mithril",
+			"mithril.js"
+		]
+	},
+	{
+		"name": "mobx-original",
+		"folder_name": [
+			"mobx",
+			"mobxjs"
+		]
+	},
+	{
+		"name": "mocha-original",
+		"folder_name": [
+			"mocha"
+		]
+	},
+	{
+		"name": "modx-original",
+		"folder_name": [
+			"modx"
+		]
+	},
+	{
+		"name": "moleculer-original",
+		"folder_name": [
+			"moleculer",
+			"moleculerjs",
+			"moleculer.js"
+		]
+	},
+	{
+		"name": "mongodb-original",
+		"folder_name": [
+			"mongodb"
+		]
+	},
+	{
+		"name": "mongoose-original",
+		"folder_name": [
+			"mongoose",
+			"mongoosejs"
+		]
+	},
+	{
+		"name": "monogame-original",
+		"folder_name": [
+			"monogame"
+		]
+	},
+	{
+		"name": "moodle-original",
+		"folder_name": [
+			"moodle"
+		]
+	},
+	{
+		"name": "msdos-original",
+		"folder_name": [
+			"msdos",
+			"microsoftdiskoperatingsystem"
+		]
+	},
+	{
+		"name": "mysql-original",
+		"folder_name": [
+			"mysql",
+			"mystructuredquerylanguage"
+		]
+	},
+	{
+		"name": "nano-original",
+		"folder_name": [
+			"nano",
+			"gnu-nano"
+		]
+	},
+	{
+		"name": "nats-original",
+		"folder_name": [
+			"nats",
+			"nats-io",
+			"nats.io"
+		]
+	},
+	{
+		"name": "neo4j-original",
+		"folder_name": [
+			"neo4j"
+		]
+	},
+	{
+		"name": "neovim-original",
+		"folder_name": [
+			"neovim"
+		]
+	},
+	{
+		"name": "nestjs-original",
+		"folder_name": [
+			"nestjs"
+		]
+	},
+	{
+		"name": "netbeans-original",
+		"folder_name": [
+			"netbeans"
+		]
+	},
+	{
+		"name": "netbox-original",
+		"folder_name": [
+			"netbox"
+		]
+	},
+	{
+		"name": "netlify-original",
+		"folder_name": [
+			".netlify",
+			"netlify"
+		]
+	},
+	{
+		"name": "networkx-original",
+		"folder_name": [
+			"networkx"
+		]
+	},
+	{
+		"name": "newrelic-original",
+		"folder_name": [
+			"newrelic"
+		]
+	},
+	{
+		"name": "nextjs-original",
+		"folder_name": [
+			".next",
+			"nextjs"
+		]
+	},
+	{
+		"name": "nginx-original",
+		"folder_name": [
+			"nginx"
+		]
+	},
+	{
+		"name": "ngrok-original",
+		"folder_name": [
+			"ngrok"
+		]
+	},
+	{
+		"name": "ngrx-original",
+		"folder_name": [
+			"ngrx"
+		]
+	},
+	{
+		"name": "nhibernate-original",
+		"folder_name": [
+			"nhibernate"
+		]
+	},
+	{
+		"name": "nim-original",
+		"folder_name": [
+			"nim",
+			"nimlang"
+		]
+	},
+	{
+		"name": "nimble-original",
+		"folder_name": [
+			"nimble"
+		]
+	},
+	{
+		"name": "nixos-original",
+		"folder_name": [
+			"nixos"
+		]
+	},
+	{
+		"name": "nodejs-original",
+		"folder_name": [
+			"node_modules",
+			"nodejs"
+		]
+	},
+	{
+		"name": "nodemon-original",
+		"folder_name": [
+			"nodemon",
+			"nodemonjs"
+		]
+	},
+	{
+		"name": "nodered-original",
+		"folder_name": [
+			"nodered",
+			"node-red"
+		]
+	},
+	{
+		"name": "nodewebkit-original",
+		"folder_name": [
+			"nodewebkit",
+			"nwjs"
+		]
+	},
+	{
+		"name": "nomad-original",
+		"folder_name": [
+			"nomad"
+		]
+	},
+	{
+		"name": "norg-original",
+		"folder_name": [
+			"norg",
+			"neorg"
+		]
+	},
+	{
+		"name": "notion-original",
+		"folder_name": [
+			"notion"
+		]
+	},
+	{
+		"name": "npm-original",
+		"folder_name": [
+			"npm",
+			"npmjs",
+			"nodepackagemanager"
+		]
+	},
+	{
+		"name": "npss-original",
+		"folder_name": [
+			"npss"
+		]
+	},
+	{
+		"name": "nuget-original",
+		"folder_name": [
+			"nuget"
+		]
+	},
+	{
+		"name": "numpy-original",
+		"folder_name": [
+			"numpy"
+		]
+	},
+	{
+		"name": "nuxt-original",
+		"folder_name": [
+			"nuxt"
+		]
+	},
+	{
+		"name": "nuxtjs-original",
+		"folder_name": [
+			".nuxt",
+			"nuxtjs"
+		]
+	},
+	{
+		"name": "oauth-original",
+		"folder_name": [
+			"oauth"
+		]
+	},
+	{
+		"name": "objectivec-plain",
+		"folder_name": [
+			"objectivec"
+		]
+	},
+	{
+		"name": "ocaml-original",
+		"folder_name": [
+			"ocaml"
+		]
+	},
+	{
+		"name": "ohmyzsh-original",
+		"folder_name": [
+			"ohmyzsh",
+			"omz",
+			"ohmyz.sh"
+		]
+	},
+	{
+		"name": "okta-original",
+		"folder_name": [
+			"okta"
+		]
+	},
+	{
+		"name": "openal-original",
+		"folder_name": [
+			"openal"
+		]
+	},
+	{
+		"name": "openapi-original",
+		"folder_name": [
+			"openapi"
+		]
+	},
+	{
+		"name": "opencl-original",
+		"folder_name": [
+			"opencl"
+		]
+	},
+	{
+		"name": "opencv-original",
+		"folder_name": [
+			"opencv"
+		]
+	},
+	{
+		"name": "opengl-original",
+		"folder_name": [
+			"opengl",
+			"opengraphicslibrary"
+		]
+	},
+	{
+		"name": "openstack-original",
+		"folder_name": [
+			"openstack"
+		]
+	},
+	{
+		"name": "opensuse-original",
+		"folder_name": [
+			"opensuse"
+		]
+	},
+	{
+		"name": "opentelemetry-original",
+		"folder_name": [
+			"opentelemetry"
+		]
+	},
+	{
+		"name": "opera-original",
+		"folder_name": [
+			"opera"
+		]
+	},
+	{
+		"name": "oracle-original",
+		"folder_name": [
+			"oracle",
+			"oracledatabase"
+		]
+	},
+	{
+		"name": "ory-original",
+		"folder_name": [
+			"ory"
+		]
+	},
+	{
+		"name": "p5js-original",
+		"folder_name": [
+			"p5js",
+			"p5.js"
+		]
+	},
+	{
+		"name": "packer-original",
+		"folder_name": [
+			"packer"
+		]
+	},
+	{
+		"name": "pandas-original",
+		"folder_name": [
+			"pandas"
+		]
+	},
+	{
+		"name": "passport-original",
+		"folder_name": [
+			"passport",
+			"passportjs"
+		]
+	},
+	{
+		"name": "perl-original",
+		"folder_name": [
+			"perl"
+		]
+	},
+	{
+		"name": "pfsense-original",
+		"folder_name": [
+			"pfsense"
+		]
+	},
+	{
+		"name": "phalcon-original",
+		"folder_name": [
+			"phalcon"
+		]
+	},
+	{
+		"name": "phoenix-original",
+		"folder_name": [
+			"phoenix"
+		]
+	},
+	{
+		"name": "photonengine-original",
+		"folder_name": [
+			"photonengine",
+			"photon"
+		]
+	},
+	{
+		"name": "photoshop-original",
+		"folder_name": [
+			"photoshop",
+			"adobephotoshop"
+		]
+	},
+	{
+		"name": "php-original",
+		"folder_name": [
+			"php"
+		]
+	},
+	{
+		"name": "phpstorm-original",
+		"folder_name": [
+			"phpstorm"
+		]
+	},
+	{
+		"name": "pixijs-original",
+		"folder_name": [
+			"pixijs"
+		]
+	},
+	{
+		"name": "playwright-original",
+		"folder_name": [
+			"playwright"
+		]
+	},
+	{
+		"name": "plotly-original",
+		"folder_name": [
+			"plotly"
+		]
+	},
+	{
+		"name": "pm2-original",
+		"folder_name": [
+			"pm2"
+		]
+	},
+	{
+		"name": "pnpm-original",
+		"folder_name": [
+			"pnpm"
+		]
+	},
+	{
+		"name": "podman-original",
+		"folder_name": [
+			"podman"
+		]
+	},
+	{
+		"name": "poetry-original",
+		"folder_name": [
+			"poetry",
+			"python-poetry"
+		]
+	},
+	{
+		"name": "polygon-original",
+		"folder_name": [
+			"polygon"
+		]
+	},
+	{
+		"name": "portainer-original",
+		"folder_name": [
+			"portainer"
+		]
+	},
+	{
+		"name": "postcss-original",
+		"folder_name": [
+			"postcss"
+		]
+	},
+	{
+		"name": "postgresql-original",
+		"folder_name": [
+			"postgresql"
+		]
+	},
+	{
+		"name": "postman-original",
+		"folder_name": [
+			"postman"
+		]
+	},
+	{
+		"name": "powershell-original",
+		"folder_name": [
+			"powershell",
+			"ps"
+		]
+	},
+	{
+		"name": "premierepro-original",
+		"folder_name": [
+			"premierepro",
+			"adobepremierepro"
+		]
+	},
+	{
+		"name": "primeng-original",
+		"folder_name": [
+			"primeng"
+		]
+	},
+	{
+		"name": "prisma-original",
+		"folder_name": [
+			"prisma"
+		]
+	},
+	{
+		"name": "processing-original",
+		"folder_name": [
+			"processing",
+			"processingpy"
+		]
+	},
+	{
+		"name": "processwire-original",
+		"folder_name": [
+			"processwire"
+		]
+	},
+	{
+		"name": "prolog-original",
+		"folder_name": [
+			"prolog",
+			"swi-prolog"
+		]
+	},
+	{
+		"name": "prometheus-original",
+		"folder_name": [
+			"prometheus"
+		]
+	},
+	{
+		"name": "protractor-original",
+		"folder_name": [
+			"protractor",
+			"protractorjs",
+			"protractortest"
+		]
+	},
+	{
+		"name": "proxmox-original",
+		"folder_name": [
+			"proxmox"
+		]
+	},
+	{
+		"name": "pug-original",
+		"folder_name": [
+			"pug",
+			"pugjs"
+		]
+	},
+	{
+		"name": "pulsar-original",
+		"folder_name": [
+			"pulsar"
+		]
+	},
+	{
+		"name": "pulumi-original",
+		"folder_name": [
+			"pulumi"
+		]
+	},
+	{
+		"name": "puppeteer-original",
+		"folder_name": [
+			"puppeteer"
+		]
+	},
+	{
+		"name": "purescript-original",
+		"folder_name": [
+			"purescript"
+		]
+	},
+	{
+		"name": "putty-original",
+		"folder_name": [
+			"putty"
+		]
+	},
+	{
+		"name": "pycharm-original",
+		"folder_name": [
+			"pycharm"
+		]
+	},
+	{
+		"name": "pypi-original",
+		"folder_name": [
+			"pypi"
+		]
+	},
+	{
+		"name": "pyscript-original-wordmark",
+		"folder_name": [
+			"pyscript"
+		]
+	},
+	{
+		"name": "pytest-original",
+		"folder_name": [
+			".pytest_cache",
+			"pytest"
+		]
+	},
+	{
+		"name": "python-original",
+		"folder_name": [
+			"__pycache__",
+			".venv",
+			"venv",
+			"python"
+		]
+	},
+	{
+		"name": "pytorch-original",
+		"folder_name": [
+			"pytorch"
+		]
+	},
+	{
+		"name": "qodana-original",
+		"folder_name": [
+			"qodana"
+		]
+	},
+	{
+		"name": "qt-original",
+		"folder_name": [
+			"qt"
+		]
+	},
+	{
+		"name": "qtest-original",
+		"folder_name": [
+			"qtest"
+		]
+	},
+	{
+		"name": "quarkus-original",
+		"folder_name": [
+			"quarkus"
+		]
+	},
+	{
+		"name": "quasar-original",
+		"folder_name": [
+			"quasar"
+		]
+	},
+	{
+		"name": "qwik-original",
+		"folder_name": [
+			"qwik"
+		]
+	},
+	{
+		"name": "r-original",
+		"folder_name": [
+			"r",
+			"rlang"
+		]
+	},
+	{
+		"name": "rabbitmq-original",
+		"folder_name": [
+			"rabbitmq"
+		]
+	},
+	{
+		"name": "racket-original",
+		"folder_name": [
+			"racket"
+		]
+	},
+	{
+		"name": "radstudio-original",
+		"folder_name": [
+			"radstudio"
+		]
+	},
+	{
+		"name": "rails-plain",
+		"folder_name": [
+			"rails",
+			"rubyonrails"
+		]
+	},
+	{
+		"name": "railway-original",
+		"folder_name": [
+			"railway"
+		]
+	},
+	{
+		"name": "rancher-original",
+		"folder_name": [
+			"rancher"
+		]
+	},
+	{
+		"name": "raspberrypi-original",
+		"folder_name": [
+			"raspberrypi",
+			"rpi"
+		]
+	},
+	{
+		"name": "reach-original",
+		"folder_name": [
+			"reach"
+		]
+	},
+	{
+		"name": "react-original",
+		"folder_name": [
+			"components",
+			"react",
+			"reactjs"
+		]
+	},
+	{
+		"name": "reactbootstrap-original",
+		"folder_name": [
+			"reactbootstrap",
+			"react-bootstrap"
+		]
+	},
+	{
+		"name": "reactnative-original",
+		"folder_name": [
+			"reactnative",
+			"react-native"
+		]
+	},
+	{
+		"name": "reactnavigation-original",
+		"folder_name": [
+			"reactnavigation"
+		]
+	},
+	{
+		"name": "reactrouter-original",
+		"folder_name": [
+			"reactrouter"
+		]
+	},
+	{
+		"name": "readthedocs-original",
+		"folder_name": [
+			"readthedocs"
+		]
+	},
+	{
+		"name": "realm-original",
+		"folder_name": [
+			"realm"
+		]
+	},
+	{
+		"name": "rect-original",
+		"folder_name": [
+			"rect",
+			"rectlang"
+		]
+	},
+	{
+		"name": "redhat-original",
+		"folder_name": [
+			"redhat"
+		]
+	},
+	{
+		"name": "redis-original",
+		"folder_name": [
+			"redis",
+			"remotedictionaryserver"
+		]
+	},
+	{
+		"name": "redux-original",
+		"folder_name": [
+			"redux",
+			"store",
+			"reduxjs"
+		]
+	},
+	{
+		"name": "reflex-original",
+		"folder_name": [
+			"reflex"
+		]
+	},
+	{
+		"name": "remix-original",
+		"folder_name": [
+			"remix",
+			"remix.run"
+		]
+	},
+	{
+		"name": "renpy-original",
+		"folder_name": [
+			"renpy"
+		]
+	},
+	{
+		"name": "replit-original",
+		"folder_name": [
+			"replit"
+		]
+	},
+	{
+		"name": "rexx-original",
+		"folder_name": [
+			"rexx"
+		]
+	},
+	{
+		"name": "rider-original",
+		"folder_name": [
+			"rider"
+		]
+	},
+	{
+		"name": "rocksdb-original",
+		"folder_name": [
+			"rocksdb"
+		]
+	},
+	{
+		"name": "rockylinux-original",
+		"folder_name": [
+			"rockylinux",
+			"rocky"
+		]
+	},
+	{
+		"name": "rollup-original",
+		"folder_name": [
+			"rollup",
+			"rollupjs",
+			"rollup.js"
+		]
+	},
+	{
+		"name": "ros-original",
+		"folder_name": [
+			"ros",
+			"robotoperatingsystem"
+		]
+	},
+	{
+		"name": "rspec-original",
+		"folder_name": [
+			"rspec"
+		]
+	},
+	{
+		"name": "rstudio-original",
+		"folder_name": [
+			"rstudio"
+		]
+	},
+	{
+		"name": "ruby-original",
+		"folder_name": [
+			"ruby",
+			"rubylang"
+		]
+	},
+	{
+		"name": "rubymine-original",
+		"folder_name": [
+			"rubymine"
+		]
+	},
+	{
+		"name": "rust-original",
+		"folder_name": [
+			"target",
+			"rust",
+			"rustlang"
+		]
+	},
+	{
+		"name": "rxjs-original",
+		"folder_name": [
+			"rxjs"
+		]
+	},
+	{
+		"name": "safari-original",
+		"folder_name": [
+			"safari",
+			"applesafari"
+		]
+	},
+	{
+		"name": "salesforce-original",
+		"folder_name": [
+			"salesforce"
+		]
+	},
+	{
+		"name": "sanity-original",
+		"folder_name": [
+			"sanity"
+		]
+	},
+	{
+		"name": "sass-original",
+		"folder_name": [
+			"sass",
+			"scss"
+		]
+	},
+	{
+		"name": "scala-original",
+		"folder_name": [
+			"scala",
+			"scalalang"
+		]
+	},
+	{
+		"name": "scalingo-original",
+		"folder_name": [
+			"scalingo"
+		]
+	},
+	{
+		"name": "scikitlearn-original",
+		"folder_name": [
+			"scikitlearn",
+			"scikit-learn",
+			"scikit",
+			"sklearn"
+		]
+	},
+	{
+		"name": "sdl-original",
+		"folder_name": [
+			"sdl",
+			"simpledirectmedialayer"
+		]
+	},
+	{
+		"name": "selenium-original",
+		"folder_name": [
+			"selenium"
+		]
+	},
+	{
+		"name": "sema-original",
+		"folder_name": [
+			"sema"
+		]
+	},
+	{
+		"name": "sentry-original",
+		"folder_name": [
+			"sentry"
+		]
+	},
+	{
+		"name": "sequelize-original",
+		"folder_name": [
+			"sequelize",
+			"sequelizejs"
+		]
+	},
+	{
+		"name": "shopware-original",
+		"folder_name": [
+			"shopware"
+		]
+	},
+	{
+		"name": "shotgrid-original",
+		"folder_name": [
+			"shotgrid"
+		]
+	},
+	{
+		"name": "sketch-original",
+		"folder_name": [
+			"sketch"
+		]
+	},
+	{
+		"name": "slack-original",
+		"folder_name": [
+			"slack"
+		]
+	},
+	{
+		"name": "socketio-original",
+		"folder_name": [
+			"socketio"
+		]
+	},
+	{
+		"name": "solidity-original",
+		"folder_name": [
+			"solidity",
+			"soliditylang"
+		]
+	},
+	{
+		"name": "solidjs-original",
+		"folder_name": [
+			"solidjs"
+		]
+	},
+	{
+		"name": "sonarqube-original",
+		"folder_name": [
+			"sonarqube",
+			"sonar"
+		]
+	},
+	{
+		"name": "sourceengine-original",
+		"folder_name": [
+			"sourceengine"
+		]
+	},
+	{
+		"name": "sourcetree-original",
+		"folder_name": [
+			"sourcetree"
+		]
+	},
+	{
+		"name": "spack-original",
+		"folder_name": [
+			"spack"
+		]
+	},
+	{
+		"name": "spicedb-original",
+		"folder_name": [
+			"spicedb"
+		]
+	},
+	{
+		"name": "splunk-original-wordmark",
+		"folder_name": [
+			"splunk"
+		]
+	},
+	{
+		"name": "spring-original",
+		"folder_name": [
+			"spring",
+			"springframework"
+		]
+	},
+	{
+		"name": "spss-original",
+		"folder_name": [
+			"spss",
+			"ibmspss"
+		]
+	},
+	{
+		"name": "spyder-original",
+		"folder_name": [
+			"spyder"
+		]
+	},
+	{
+		"name": "sqlalchemy-original",
+		"folder_name": [
+			"sqlalchemy"
+		]
+	},
+	{
+		"name": "sqldeveloper-original",
+		"folder_name": [
+			"sqldeveloper"
+		]
+	},
+	{
+		"name": "sqlite-original",
+		"folder_name": [
+			"sqlite"
+		]
+	},
+	{
+		"name": "ssh-original",
+		"folder_name": [
+			"ssh",
+			"secureshell"
+		]
+	},
+	{
+		"name": "stackblitz-original",
+		"folder_name": [
+			"stackblitz"
+		]
+	},
+	{
+		"name": "stackoverflow-original",
+		"folder_name": [
+			"stackoverflow"
+		]
+	},
+	{
+		"name": "stata-original-wordmark",
+		"folder_name": [
+			"stata"
+		]
+	},
+	{
+		"name": "stenciljs-original",
+		"folder_name": [
+			"stenciljs",
+			"stencil"
+		]
+	},
+	{
+		"name": "storybook-original",
+		"folder_name": [
+			".storybook",
+			"storybook",
+			"storybookjs"
+		]
+	},
+	{
+		"name": "streamlit-original",
+		"folder_name": [
+			"streamlit"
+		]
+	},
+	{
+		"name": "styledcomponents-original",
+		"folder_name": [
+			"styledcomponents",
+			"styled-components"
+		]
+	},
+	{
+		"name": "stylus-original",
+		"folder_name": [
+			"stylus",
+			"styluslang"
+		]
+	},
+	{
+		"name": "subversion-original",
+		"folder_name": [
+			"subversion",
+			"apachesubversion"
+		]
+	},
+	{
+		"name": "sulu-original",
+		"folder_name": [
+			"sulu"
+		]
+	},
+	{
+		"name": "supabase-original",
+		"folder_name": [
+			"supabase"
+		]
+	},
+	{
+		"name": "surrealdb-original",
+		"folder_name": [
+			"surrealdb"
+		]
+	},
+	{
+		"name": "svelte-original",
+		"folder_name": [
+			".svelte-kit",
+			"svelte",
+			"sveltejs"
+		]
+	},
+	{
+		"name": "svgo-original",
+		"folder_name": [
+			"svgo"
+		]
+	},
+	{
+		"name": "swagger-original",
+		"folder_name": [
+			"swagger"
+		]
+	},
+	{
+		"name": "swift-original",
+		"folder_name": [
+			"swift"
+		]
+	},
+	{
+		"name": "swiper-original",
+		"folder_name": [
+			"swiper"
+		]
+	},
+	{
+		"name": "symfony-original",
+		"folder_name": [
+			"symfony"
+		]
+	},
+	{
+		"name": "tailwindcss-original",
+		"folder_name": [
+			"tailwindcss"
+		]
+	},
+	{
+		"name": "talos-original",
+		"folder_name": [
+			"talos"
+		]
+	},
+	{
+		"name": "tauri-original",
+		"folder_name": [
+			"tauri"
+		]
+	},
+	{
+		"name": "teleport-original",
+		"folder_name": [
+			"teleport"
+		]
+	},
+	{
+		"name": "tensorflow-original",
+		"folder_name": [
+			"tensorflow"
+		]
+	},
+	{
+		"name": "terraform-original",
+		"folder_name": [
+			".terraform",
+			"terraform"
+		]
+	},
+	{
+		"name": "terramate-original",
+		"folder_name": [
+			"terramate"
+		]
+	},
+	{
+		"name": "tex-original",
+		"folder_name": [
+			"tex"
+		]
+	},
+	{
+		"name": "thealgorithms-original",
+		"folder_name": [
+			"thealgorithms"
+		]
+	},
+	{
+		"name": "threedsmax-original",
+		"folder_name": [
+			"threedsmax",
+			"3dsmax"
+		]
+	},
+	{
+		"name": "threejs-original",
+		"folder_name": [
+			"threejs"
+		]
+	},
+	{
+		"name": "thymeleaf-original",
+		"folder_name": [
+			"thymeleaf"
+		]
+	},
+	{
+		"name": "titaniumsdk-original",
+		"folder_name": [
+			"titaniumsdk"
+		]
+	},
+	{
+		"name": "tmux-original",
+		"folder_name": [
+			"tmux"
+		]
+	},
+	{
+		"name": "tomcat-original",
+		"folder_name": [
+			"tomcat"
+		]
+	},
+	{
+		"name": "tortoisegit-original",
+		"folder_name": [
+			"tortoisegit"
+		]
+	},
+	{
+		"name": "towergit-original",
+		"folder_name": [
+			"towergit",
+			"towergitclient"
+		]
+	},
+	{
+		"name": "traefikmesh-original",
+		"folder_name": [
+			"traefikmesh"
+		]
+	},
+	{
+		"name": "traefikproxy-original",
+		"folder_name": [
+			"traefikproxy"
+		]
+	},
+	{
+		"name": "travis-original",
+		"folder_name": [
+			"travis",
+			"travisci"
+		]
+	},
+	{
+		"name": "trello-original",
+		"folder_name": [
+			"trello",
+			"atlassiantrello"
+		]
+	},
+	{
+		"name": "trpc-original",
+		"folder_name": [
+			"trpc"
+		]
+	},
+	{
+		"name": "turbo-original",
+		"folder_name": [
+			"turbo"
+		]
+	},
+	{
+		"name": "twilio-original",
+		"folder_name": [
+			"twilio"
+		]
+	},
+	{
+		"name": "twitter-original",
+		"folder_name": [
+			"twitter",
+			"x"
+		]
+	},
+	{
+		"name": "typescript-original",
+		"folder_name": [
+			"ts",
+			"types",
+			"@types",
+			"typings",
+			"typescript"
+		]
+	},
+	{
+		"name": "typo3-original",
+		"folder_name": [
+			"typo3"
+		]
+	},
+	{
+		"name": "ubuntu-original",
+		"folder_name": [
+			"ubuntu"
+		]
+	},
+	{
+		"name": "unifiedmodelinglanguage-original",
+		"folder_name": [
+			"unifiedmodelinglanguage",
+			"uml"
+		]
+	},
+	{
+		"name": "unity-plain",
+		"folder_name": [
+			"Assets",
+			"unity"
+		]
+	},
+	{
+		"name": "unix-original",
+		"folder_name": [
+			"unix"
+		]
+	},
+	{
+		"name": "unrealengine-original",
+		"folder_name": [
+			"unrealengine"
+		]
+	},
+	{
+		"name": "uwsgi-original",
+		"folder_name": [
+			"uwsgi",
+			"uwebservergatewayinterface"
+		]
+	},
+	{
+		"name": "v8-original",
+		"folder_name": [
+			"v8"
+		]
+	},
+	{
+		"name": "vaadin-original",
+		"folder_name": [
+			"vaadin"
+		]
+	},
+	{
+		"name": "vagrant-original",
+		"folder_name": [
+			"vagrant"
+		]
+	},
+	{
+		"name": "vala-original",
+		"folder_name": [
+			"vala"
+		]
+	},
+	{
+		"name": "vault-original",
+		"folder_name": [
+			"vault"
+		]
+	},
+	{
+		"name": "veevalidate-original",
+		"folder_name": [
+			"veevalidate"
+		]
+	},
+	{
+		"name": "vercel-original",
+		"folder_name": [
+			".vercel",
+			"vercel"
+		]
+	},
+	{
+		"name": "vertx-original",
+		"folder_name": [
+			"vertx",
+			"eclipsevertx"
+		]
+	},
+	{
+		"name": "vim-original",
+		"folder_name": [
+			"vim",
+			"viimproved"
+		]
+	},
+	{
+		"name": "visualbasic-original",
+		"folder_name": [
+			"visualbasic",
+			"vb"
+		]
+	},
+	{
+		"name": "visualstudio-original",
+		"folder_name": [
+			"visualstudio",
+			"vs"
+		]
+	},
+	{
+		"name": "vite-original",
+		"folder_name": [
+			"vite"
+		]
+	},
+	{
+		"name": "vitejs-original",
+		"folder_name": [
+			"vitejs",
+			"vite.js"
+		]
+	},
+	{
+		"name": "vitess-original",
+		"folder_name": [
+			"vitess"
+		]
+	},
+	{
+		"name": "vitest-original",
+		"folder_name": [
+			"vitest"
+		]
+	},
+	{
+		"name": "vscode-original",
+		"folder_name": [
+			".vscode",
+			"vscode",
+			"visualstudiocode"
+		]
+	},
+	{
+		"name": "vscodium-original",
+		"folder_name": [
+			"vscodium"
+		]
+	},
+	{
+		"name": "vsphere-original",
+		"folder_name": [
+			"vsphere",
+			"vmwarevsphere"
+		]
+	},
+	{
+		"name": "vuejs-original",
+		"folder_name": [
+			"vuejs"
+		]
+	},
+	{
+		"name": "vuestorefront-original",
+		"folder_name": [
+			"vuestorefront"
+		]
+	},
+	{
+		"name": "vuetify-original",
+		"folder_name": [
+			"vuetify"
+		]
+	},
+	{
+		"name": "vulkan-original",
+		"folder_name": [
+			"vulkan"
+		]
+	},
+	{
+		"name": "vyper-original",
+		"folder_name": [
+			"vyper",
+			"vyperlang"
+		]
+	},
+	{
+		"name": "waku-original",
+		"folder_name": [
+			"waku"
+		]
+	},
+	{
+		"name": "wasm-original",
+		"folder_name": [
+			"wasm",
+			"webassembly"
+		]
+	},
+	{
+		"name": "web3js-original",
+		"folder_name": [
+			"web3js",
+			"web3.js"
+		]
+	},
+	{
+		"name": "webflow-original",
+		"folder_name": [
+			"webflow"
+		]
+	},
+	{
+		"name": "webgpu-original",
+		"folder_name": [
+			"webgpu"
+		]
+	},
+	{
+		"name": "weblate-original",
+		"folder_name": [
+			"weblate"
+		]
+	},
+	{
+		"name": "webpack-original",
+		"folder_name": [
+			"webpack",
+			"webpackjs"
+		]
+	},
+	{
+		"name": "webstorm-original",
+		"folder_name": [
+			"webstorm"
+		]
+	},
+	{
+		"name": "windows11-original",
+		"folder_name": [
+			"windows11"
+		]
+	},
+	{
+		"name": "windows8-original",
+		"folder_name": [
+			"windows8"
+		]
+	},
+	{
+		"name": "wolfram-original",
+		"folder_name": [
+			"wolfram",
+			"wolframlanguage"
+		]
+	},
+	{
+		"name": "woocommerce-original",
+		"folder_name": [
+			"woocommerce"
+		]
+	},
+	{
+		"name": "wordpress-original",
+		"folder_name": [
+			"wordpress"
+		]
+	},
+	{
+		"name": "xamarin-original",
+		"folder_name": [
+			"xamarin"
+		]
+	},
+	{
+		"name": "xcode-original",
+		"folder_name": [
+			"xcode"
+		]
+	},
+	{
+		"name": "xd-original",
+		"folder_name": [
+			"xd",
+			"adobexd"
+		]
+	},
+	{
+		"name": "xml-original",
+		"folder_name": [
+			"xml",
+			"extensiblemarkuplanguage"
+		]
+	},
+	{
+		"name": "yaml-plain",
+		"folder_name": [
+			"yaml"
+		]
+	},
+	{
+		"name": "yarn-original",
+		"folder_name": [
+			".yarn",
+			"yarn"
+		]
+	},
+	{
+		"name": "yii-original",
+		"folder_name": [
+			"yii",
+			"yesitis"
+		]
+	},
+	{
+		"name": "yugabytedb-original",
+		"folder_name": [
+			"yugabytedb"
+		]
+	},
+	{
+		"name": "yunohost-original",
+		"folder_name": [
+			"yunohost"
+		]
+	},
+	{
+		"name": "zend-original",
+		"folder_name": [
+			"zend"
+		]
+	},
+	{
+		"name": "zig-original",
+		"folder_name": [
+			"zig",
+			"ziglang"
+		]
+	},
+	{
+		"name": "zsh-original",
+		"folder_name": [
+			"zsh"
+		]
+	},
+	{
+		"name": "zustand-original",
+		"folder_name": [
+			"zustand"
+		]
+	}
+]

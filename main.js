@@ -1,4 +1,4 @@
-const PLUGIN_ID = "acode.icon.plugin.example";
+const PLUGIN_ID = "acode.devicons";
 
 const fs = acode.require("fs");
 const Url = acode.require("Url");
@@ -16,15 +16,15 @@ function mapsFromPack(files, folders) {
 			fileNames[name] = entry.name;
 		}
 		for (const ext of entry.file_extensions || []) {
-			if (ext.startsWith(".")) fileNames[ext] = entry.name;
-			else fileExtensions[ext.toLowerCase()] = entry.name;
+			fileExtensions[ext.toLowerCase()] = entry.name;
 		}
 	}
 
+	// Devicon has no "open" variants: expanded folders keep the same logo.
 	for (const entry of folders) {
 		for (const name of entry.folder_name || []) {
 			folderNames[name] = entry.name;
-			folderNamesExpanded[name] = `${entry.name}-open`;
+			folderNamesExpanded[name] = entry.name;
 		}
 	}
 
@@ -40,7 +40,7 @@ acode.setPluginInit(PLUGIN_ID, async (baseUrl) => {
 
 	registration = fileIcons.register({
 		id: PLUGIN_ID,
-		name: "Icon Pack Example",
+		name: "Devicons",
 		icons: `${Url.join(baseUrl, "icons")}/`,
 		...mapsFromPack(files, folders),
 		folder: "folder",
