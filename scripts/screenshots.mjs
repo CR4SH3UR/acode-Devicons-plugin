@@ -110,12 +110,12 @@ p{font-size:22px;color:#b8bcc6;margin-top:18px;line-height:1.45;max-width:560px}
 .stats{display:flex;gap:28px;margin-top:34px;font-size:15px;color:#9aa0ab}
 .stats b{display:block;font-size:26px;color:#fff}
 </style>
-${panel("dark", "Explorateur")}
+${panel("dark", "Explorer")}
 <div>
-	<h1>Devicons<br><span>pour Acode</span></h1>
-	<p>Les vrais logos de vos langages, frameworks et outils, directement dans l'explorateur de fichiers.</p>
+	<h1>Devicons<br><span>for Acode</span></h1>
+	<p>Real logos for your languages, frameworks and tools, right in the file explorer.</p>
 	<div class="cloud">${featured.map((n) => `<div><img src="/icons/${n}.svg"></div>`).join("")}</div>
-	<div class="stats"><div><b>${ALL.length}</b>icônes</div><div><b>194</b>extensions</div><div><b>236</b>fichiers</div><div><b>60</b>dossiers</div></div>
+	<div class="stats"><div><b>${ALL.length}</b>icons</div><div><b>194</b>extensions</div><div><b>236</b>file names</div><div><b>60</b>folders</div></div>
 </div>`,
 
 	"themes.png": `<style>${BASE_CSS}
@@ -123,8 +123,8 @@ body{background:linear-gradient(90deg,#16181d 50%,#e9ebef 50%);display:flex;just
 .col{display:flex;flex-direction:column;align-items:center;gap:18px}
 .label{font-size:18px;font-weight:700;letter-spacing:.02em}
 </style>
-<div class="col"><div class="label" style="color:#e6e8ec">Thème sombre</div>${panel("dark", "Explorateur")}</div>
-<div class="col"><div class="label" style="color:#22262d">Thème clair</div>${panel("light", "Explorateur")}</div>`,
+<div class="col"><div class="label" style="color:#e6e8ec">Dark theme</div>${panel("dark", "Explorer")}</div>
+<div class="col"><div class="label" style="color:#22262d">Light theme</div>${panel("light", "Explorer")}</div>`,
 
 	"icons.png": `<style>${BASE_CSS}
 body{background:linear-gradient(135deg,#14161b,#1d2027);padding:44px 54px;color:#fff;height:auto}
@@ -134,7 +134,7 @@ h2 span{color:#ff6a2b}
 .grid div{aspect-ratio:1;border-radius:12px;background:#ffffff0b;border:1px solid #ffffff12;display:grid;place-items:center}
 .grid img{width:58%;height:58%}
 </style>
-<h2>${ALL.length} icônes <span>en couleur</span></h2>
+<h2>${ALL.length} full-color <span>icons</span></h2>
 <div class="grid">${ALL.filter((n) => !n.startsWith("folder")).map((n) => `<div title="${n}"><img src="/icons/${n}.svg"></div>`).join("")}</div>`,
 };
 

@@ -41,7 +41,7 @@
 		const fileIcons = options?.fileIcons || requiredFileIcons;
 		if (!fileIcons?.register) {
 			const message =
-				"Devicons : cette version d'Acode ne prend pas en charge les packs d'icônes (API fileIcons). Mettez Acode à jour.";
+				"Devicons: this Acode version does not support icon packs (fileIcons API). Please update Acode.";
 			if (typeof window.toast === "function") window.toast(message, 6000);
 			console.error(message);
 			return;

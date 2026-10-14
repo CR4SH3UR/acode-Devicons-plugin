@@ -1,58 +1,29 @@
-# Devicons pour Acode
+# Devicons for Acode
 
-![Devicons pour Acode](https://raw.githubusercontent.com/CR4SH3UR/acode-Devicons-plugin/main/screenshots/hero.png)
+![Devicons for Acode](https://cdn.jsdelivr.net/gh/CR4SH3UR/acode-devicons-assets@main/hero.png)
 
-Pack d'icônes de fichiers et dossiers pour [Acode](https://acode.app) basé sur [Devicons](https://devicons.io) : les logos en couleur des langages, frameworks, outils et services (JavaScript, Python, Rust, Docker, React, Git, Supabase…).
+A file and folder icon pack for [Acode](https://acode.app) built from [Devicons](https://devicons.io): full-color logos for your languages, frameworks, tools and services (JavaScript, Python, Rust, Docker, React, Git, Supabase…).
 
-- **155 icônes** tirées de `@dev.icons/core` 1.3.0 (1966 disponibles) : seules les icônes associées sont incluses, pour un plugin léger (~250 Ko zippé). Quand une variante compacte `-icon` existe, c'est elle qui est utilisée (plus lisible en petit).
-- **190+ extensions** (`.js`, `.py`, `.rs`, `.kt`, `.dart`, `.vue`…)
-- **230+ noms de fichiers** (`package.json`, `Dockerfile`, `Cargo.toml`, `vite.config.ts`, `.gitignore`, `.env`…)
-- **60 noms de dossiers** : dossiers spéciaux (`.github`, `node_modules`, `.vscode`…) et dossiers de technos courants (`docker/`, `kubernetes/`, `android/`…)
-- Les logos noirs (GitHub, Rust, Markdown, Vercel…) sont recolorés en gris pour rester lisibles sur les thèmes sombres.
+- **155 full-color icons**, using each logo's compact mark when one exists so it stays readable at file-tree size
+- **194 file extensions**: `.js`, `.ts`, `.py`, `.rs`, `.go`, `.kt`, `.dart`, `.vue`, `.svelte`…
+- **236 file names**: `package.json`, `Dockerfile`, `Cargo.toml`, `vite.config.ts`, `tsconfig.json`, `.gitignore`, `.env`…
+- **60 folder names**: `.github`, `node_modules`, `.vscode`, `docker`, `kubernetes`, `android`…
+- **Readable on dark and light themes**: black logos (GitHub, Rust, Next.js…) are recolored so they never disappear on a dark background
+- Lightweight (about 250 KB) and works offline
 
-## Aperçu
+## Screenshots
 
-Lisibles sur les thèmes sombres comme clairs :
+![Dark and light themes](https://cdn.jsdelivr.net/gh/CR4SH3UR/acode-devicons-assets@main/themes.png)
 
-![Thème sombre et thème clair](https://raw.githubusercontent.com/CR4SH3UR/acode-Devicons-plugin/main/screenshots/themes.png)
+![All icons](https://cdn.jsdelivr.net/gh/CR4SH3UR/acode-devicons-assets@main/icons.png)
 
-Toutes les icônes incluses :
+## Usage
 
-![Les icônes du pack](https://raw.githubusercontent.com/CR4SH3UR/acode-Devicons-plugin/main/screenshots/icons.png)
+1. Install **Devicons** from Acode's plugin list.
+2. Open **Settings → App settings → Icon pack** and select **Devicons**.
 
-## Installation
+Requires an Acode version with icon pack support (the **Icon pack** setting).
 
-1. Télécharger [`plugin.zip`](plugin.zip).
-2. Dans Acode : **Plugins → + → Local**, puis choisir le zip.
-3. Sélectionner **Devicons** dans **Settings → App settings → Icon pack**.
+## Credits
 
-Nécessite une version d'Acode qui inclut l'API plugin `fileIcons`.
-
-## Développement
-
-Les icônes et les tables d'associations sont générées depuis le sprite SVG du paquet npm [`@dev.icons/core`](https://www.npmjs.com/package/@dev.icons/core) :
-
-```sh
-npm install
-npm run build   # régénère icons/, file_icons.json et folder_icons.json
-npm run pack    # build + crée plugin.zip
-npm run screenshots   # régénère les images de présentation (nécessite Playwright)
-```
-
-Pour ajouter une association, éditer [`scripts/mappings.mjs`](scripts/mappings.mjs) : chaque clé est le nom d'une icône (voir [devicons.io](https://devicons.io)), chaque valeur la liste des extensions, noms de fichiers ou noms de dossiers correspondants. Le build échoue si un nom d'icône n'existe pas ou si une même entrée est associée à deux icônes. Seules les icônes référencées sont copiées dans `icons/` : ajouter une association suffit à inclure l'icône au prochain build.
-
-| Chemin | Rôle |
-| --- | --- |
-| `main.js` | Charge les tables JSON et enregistre le pack via `fileIcons.register` |
-| `plugin.json` | Manifeste du plugin |
-| `scripts/mappings.mjs` | Associations extensions / fichiers / dossiers → icône |
-| `scripts/build.mjs` | Découpe le sprite en SVG et génère les JSON |
-| `file_icons.json` / `folder_icons.json` | Tables générées |
-| `icons/` | SVG générés : icônes associées + icônes de dossier génériques |
-| `screenshots/` | Images de présentation (générées par `scripts/screenshots.mjs`) |
-| `plugin.zip` | Archive installable |
-
-## Licences
-
-Code du plugin : Apache-2.0 ([LICENSE](LICENSE)), adapté de l'[exemple officiel d'Acode](https://github.com/Acode-Foundation/acode-icon-plugin-example).
-Icônes : [Devicons](https://github.com/vorillaz/devicons) de Theodore Vorillas, licence MIT ([LICENSE-devicons](LICENSE-devicons)). Les logos restent la propriété de leurs détenteurs respectifs.
+Icons from [Devicons](https://github.com/vorillaz/devicons) by Theodore Vorillas, MIT License. Logos and brand names belong to their respective owners.
