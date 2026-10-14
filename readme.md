@@ -1,80 +1,44 @@
-# Acode Icon Pack Plugin Example
+# Devicons pour Acode
 
-A complete Acode plugin that registers a file and folder icon pack with `acode.require("fileIcons")`.
+Pack d'icônes de fichiers et dossiers pour [Acode](https://acode.app) basé sur [Devicon](https://devicon.dev) : les logos officiels des langages, frameworks et outils (JavaScript, Python, Rust, Docker, React, Git…).
 
-Assets come from [the Material Icons pack](https://github.com/sebastianjnuwu/acode-plugins/tree/acode/packages/material-icons); see [LICENSE](LICENSE).
+- **167 icônes** Devicon en couleur
+- **240+ extensions** (`.js`, `.py`, `.rs`, `.kt`, `.dart`, `.vue`…)
+- **200+ noms de fichiers** (`package.json`, `Dockerfile`, `Cargo.toml`, `vite.config.ts`, `.gitignore`…)
+- **60 noms de dossiers** (`.github`, `node_modules`, `.vscode`, `src`…)
+- Les logos noirs (GitHub, Rust, Markdown, Vercel…) sont recolorés en gris pour rester lisibles sur les thèmes sombres.
 
-This repository is the standalone example for Acode's icon pack API. It is not part of the Acode app repository.
+## Installation
 
-## Install
+1. Télécharger [`plugin.zip`](plugin.zip).
+2. Dans Acode : **Plugins → + → Local**, puis choisir le zip.
+3. Sélectionner **Devicons** dans **Settings → App settings → Icon pack**.
 
-1. Download [`plugin.zip`](plugin.zip) (same contents as [`material-icons.zip`](material-icons.zip)).
-2. In Acode, open **Plugins → + → Local** and pick the zip.
-3. Select **Icon Pack Example** in **Settings → App settings → Icon pack**.
+Nécessite une version d'Acode qui inclut l'API plugin `fileIcons`.
 
-Requires an Acode build that includes the `fileIcons` plugin API.
+## Développement
 
-## How it works
-
-Capture `acode.require("fileIcons")` at the top of `main.js`, before any `await`. The loader binds that API to this plugin. After an `await`, `require("fileIcons")` has no executing main-script context and throws. You can also take `fileIcons` from the third initialization argument: `(baseUrl, page, { fileIcons })`.
-
-The plugin reads bundled JSON maps through `acode.require("fs")`, converts them into top-level associations, and registers the pack. Image URLs use the initialization callback's `baseUrl`. Expanded folder icons are declared explicitly. Acode supplies pack ownership from the loading plugin; do not pass `pluginId`. If you do, it must match this plugin's id.
-
-Registration does not change the selected pack. The returned registration is disposed on unmount; Acode also removes packs owned by the plugin when it unmounts.
-
-Use `register` again with the complete pack to replace it. There is no separate update or unregister method in the plugin API.
-
-```js
-const fileIcons = acode.require("fileIcons");
-const fs = acode.require("fs");
-const Url = acode.require("Url");
-
-acode.setPluginInit(plugin.id, async (baseUrl) => {
-  const root = Url.join(PLUGIN_DIR, plugin.id);
-  const files = await fs(Url.join(root, "file_icons.json")).readFile("json");
-  const folders = await fs(Url.join(root, "folder_icons.json")).readFile("json");
-
-  registration = fileIcons.register({
-    id: plugin.id,
-    name: "Icon Pack Example",
-    icons: `${Url.join(baseUrl, "icons")}/`,
-    ...mapsFromPack(files, folders),
-    folder: "folder",
-    folderExpanded: "folder-open",
-    rootFolder: "folder-root",
-    rootFolderExpanded: "folder-root-open",
-  });
-});
-
-acode.setPluginUnmount(plugin.id, () => registration?.dispose());
-```
-
-Do not load packaged JSON with `fetch()`. In Acode, the Cordova HTTP-backed `fetch()` path cannot read plugin files reliably. Use `acode.require("fs")` with a filesystem path, and `baseUrl` only for image URLs.
-
-API reference: [File and folder icon packs](https://github.com/Acode-Foundation/Acode/blob/main/docs/file-icons.md) in the Acode repository.
-
-## Layout
-
-| Path | Role |
-| --- | --- |
-| `main.js` | Loads JSON maps and registers the pack |
-| `plugin.json` | Plugin manifest |
-| `file_icons.json` / `folder_icons.json` | Association maps from the Material Icons pack |
-| `icons/` | SVG assets referenced by those maps |
-| `plugin.zip` | Installable plugin archive |
-
-## Packing
-
-From this directory:
+Les icônes et les tables d'associations sont générées depuis le paquet npm [`devicon`](https://www.npmjs.com/package/devicon) :
 
 ```sh
-zip -r plugin.zip LICENSE file_icons.json folder_icons.json icon.png icons main.js plugin.json readme.md
-cp plugin.zip material-icons.zip
+npm install
+npm run build   # régénère icons/, file_icons.json et folder_icons.json
+npm run pack    # build + crée plugin.zip
 ```
 
-## Using this as a starting point
+Pour ajouter une association, éditer [`scripts/mappings.mjs`](scripts/mappings.mjs) : chaque clé est le nom d'une icône Devicon (voir [devicon.dev](https://devicon.dev)), chaque valeur la liste des extensions, noms de fichiers ou noms de dossiers correspondants. Le build échoue si un nom d'icône n'existe pas ou si une même entrée est associée à deux icônes.
 
-1. Change `id`, `name`, and author in `plugin.json` and `main.js`.
-2. Swap `icons/` and the JSON maps, or register associations inline.
-3. Capture `acode.require("fileIcons")` at the top of `main.js`, or use `options.fileIcons` in `setPluginInit`. Omit `pluginId`; Acode binds ownership to the loading plugin.
-4. Rebuild `plugin.zip` and install it locally.
+| Chemin | Rôle |
+| --- | --- |
+| `main.js` | Charge les tables JSON et enregistre le pack via `fileIcons.register` |
+| `plugin.json` | Manifeste du plugin |
+| `scripts/mappings.mjs` | Associations extensions / fichiers / dossiers → icône Devicon |
+| `scripts/build.mjs` | Génère `icons/` et les JSON à partir de `devicon` |
+| `file_icons.json` / `folder_icons.json` | Tables générées |
+| `icons/` | SVG générés (Devicon + icônes de dossier génériques) |
+| `plugin.zip` | Archive installable |
+
+## Licences
+
+Code du plugin : Apache-2.0 ([LICENSE](LICENSE)), adapté de l'[exemple officiel d'Acode](https://github.com/Acode-Foundation/acode-icon-plugin-example).
+Icônes : [Devicon](https://github.com/devicons/devicon), licence MIT ([LICENSE-devicon](LICENSE-devicon)). Les logos restent la propriété de leurs détenteurs respectifs.

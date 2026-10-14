@@ -1,19 +1,18 @@
 {
 	"$schema": "https://acode.app/schema/plugin/v0.1.0.json",
-	"id": "acode.icon.plugin.example",
-	"name": "Icon Pack Example",
+	"id": "acode.devicons",
+	"name": "Devicons",
 	"main": "main.js",
 	"version": "1.0.0",
 	"license": "Apache-2.0",
 	"readme": "readme.md",
-	"repository": "https://github.com/Acode-Foundation/acode-icon-plugin-example.git",
+	"repository": "https://github.com/CR4SH3UR/acode-Devicons-plugin.git",
 	"icon": "icon.png",
-	"files": ["icons", "file_icons.json", "folder_icons.json"],
-	"keywords": ["icons", "file-icons", "example"],
+	"files": ["icons", "file_icons.json", "folder_icons.json", "LICENSE-devicon"],
+	"keywords": ["icons", "file-icons", "devicon", "devicons", "icon-pack"],
 	"price": 0,
 	"author": {
-		"name": "Acode-Foundation",
-		"email": "contact@acode.app",
-		"github": "Acode-Foundation"
+		"name": "CR4SH3UR",
+		"github": "CR4SH3UR"
 	}
 }

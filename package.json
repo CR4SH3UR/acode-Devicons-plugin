@@ -1,0 +1,12 @@
+{
+	"name": "acode-devicons-plugin",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "node scripts/build.mjs",
+		"pack": "npm run build && rm -f plugin.zip && zip -qr plugin.zip LICENSE LICENSE-devicon file_icons.json folder_icons.json icon.png icons main.js plugin.json readme.md"
+	},
+	"devDependencies": {
+		"devicon": "2.17.0"
+	}
+}
