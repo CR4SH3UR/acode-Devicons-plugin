@@ -1,7 +1,7 @@
 // Renders the README presentation images into screenshots/.
 // Needs Playwright with a Chromium build: `npm run screenshots`
 // (or NODE_PATH=$(npm root -g) node scripts/screenshots.mjs).
-import { readFileSync } from "node:fs";
+import { readdirSync, readFileSync } from "node:fs";
 import { createServer } from "node:http";
 import { createRequire } from "node:module";
 import { dirname, extname, join } from "node:path";
@@ -95,8 +95,16 @@ body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;widt
 .chev{width:10px;font-size:10px;opacity:.6;flex:none}
 `;
 
-const ALL = [...new Set([...json("file_icons.json"), ...json("folder_icons.json")].map((e) => e.name))].sort();
-const featured = ["javascript", "typescript-icon", "python", "rust", "go", "react", "vue", "svelte-icon", "docker-icon", "kotlin-icon", "dart", "c-plusplus", "html-5", "css", "php", "swift", "github-icon", "git-icon", "npm-icon", "vite", "tailwind", "nodejs-icon", "flutter", "java"].filter((n) => ALL.includes(n));
+const ALL = readdirSync(join(root, "icons"))
+	.filter((f) => f.endsWith(".svg") && !f.startsWith("folder"))
+	.map((f) => f.slice(0, -4))
+	.sort();
+// One tile per technology, using the compact "-icon" mark when there is one.
+const preferred = (n) => (ALL.includes(`${n}-icon`) ? `${n}-icon` : n);
+const LOGOS = ALL.filter((n) => !n.endsWith("-icon")).map(preferred);
+const count = (file, key) => json(file).reduce((n, e) => n + (e[key] || []).length, 0);
+const fmt = (n) => n.toLocaleString("en-US");
+const featured = ["javascript", "typescript-icon", "python", "rust", "go", "react", "vue", "svelte-icon", "docker-icon", "kotlin-icon", "dart", "c-plusplus", "html-5", "css", "php", "swift", "github-icon", "git-icon", "npm-icon", "vite", "tailwind", "nodejs-icon", "flutter", "java"].map((n) => preferred(n.replace(/-icon$/, ""))).filter((n) => ALL.includes(n));
 
 const PAGES = {
 	"hero.png": `<style>${BASE_CSS}
@@ -115,7 +123,7 @@ ${panel("dark", "Explorer")}
 	<h1>Devicons<br><span>for Acode</span></h1>
 	<p>Real logos for your languages, frameworks and tools, right in the file explorer.</p>
 	<div class="cloud">${featured.map((n) => `<div><img src="/icons/${n}.svg"></div>`).join("")}</div>
-	<div class="stats"><div><b>${ALL.length}</b>icons</div><div><b>194</b>extensions</div><div><b>236</b>file names</div><div><b>60</b>folders</div></div>
+	<div class="stats"><div><b>${fmt(ALL.length)}</b>icons</div><div><b>${count("file_icons.json", "file_extensions")}</b>extensions</div><div><b>${count("file_icons.json", "file_name")}</b>file names</div><div><b>${fmt(count("folder_icons.json", "folder_name"))}</b>folders</div></div>
 </div>`,
 
 	"themes.png": `<style>${BASE_CSS}
@@ -130,12 +138,12 @@ body{background:linear-gradient(90deg,#16181d 50%,#e9ebef 50%);display:flex;just
 body{background:linear-gradient(135deg,#14161b,#1d2027);padding:44px 54px;color:#fff;height:auto}
 h2{font-size:30px;font-weight:800;letter-spacing:-.02em}
 h2 span{color:#ff6a2b}
-.grid{display:grid;grid-template-columns:repeat(16,1fr);gap:12px;margin-top:26px}
-.grid div{aspect-ratio:1;border-radius:12px;background:#ffffff0b;border:1px solid #ffffff12;display:grid;place-items:center}
-.grid img{width:58%;height:58%}
+.grid{display:grid;grid-template-columns:repeat(40,1fr);gap:5px;margin-top:26px}
+.grid div{aspect-ratio:1;border-radius:5px;background:#ffffff0b;border:1px solid #ffffff12;display:grid;place-items:center}
+.grid img{width:70%;height:70%}
 </style>
-<h2>${ALL.length} full-color <span>icons</span></h2>
-<div class="grid">${ALL.filter((n) => !n.startsWith("folder")).map((n) => `<div title="${n}"><img src="/icons/${n}.svg"></div>`).join("")}</div>`,
+<h2>${fmt(ALL.length)} full-color icons, <span>${fmt(LOGOS.length)} logos</span></h2>
+<div class="grid">${LOGOS.map((n) => `<div title="${n}"><img src="/icons/${n}.svg"></div>`).join("")}</div>`,
 };
 
 const server = createServer((req, res) => {
@@ -160,7 +168,7 @@ const browser = await chromium.launch();
 for (const name of Object.keys(PAGES)) {
 	const page = await browser.newPage({ viewport: { width: 1200, height: 675 }, deviceScaleFactor: 2 });
 	await page.goto(`http://localhost:${port}/page/${name}`, { waitUntil: "networkidle" });
-	await page.screenshot({ path: join(root, "screenshots", name), fullPage: name === "icons.png" });
+	await page.screenshot({ path: join(root, "screenshots", name), fullPage: name === "icons.png", timeout: 180000 });
 	console.log(`screenshots/${name}`);
 }
 await browser.close();

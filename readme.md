@@ -4,12 +4,12 @@
 
 A file and folder icon pack for [Acode](https://acode.app) built from [Devicons](https://devicons.io): full-color logos for your languages, frameworks, tools and services (JavaScript, Python, Rust, Docker, React, Git, Supabase…).
 
-- **155 full-color icons**, using each logo's compact mark when one exists so it stays readable at file-tree size
+- **The full Devicons set: 1,966 full-color icons** (1,465 logos plus their compact marks); the compact mark is used when one exists so logos stay readable at file-tree size
 - **194 file extensions**: `.js`, `.ts`, `.py`, `.rs`, `.go`, `.kt`, `.dart`, `.vue`, `.svelte`…
 - **236 file names**: `package.json`, `Dockerfile`, `Cargo.toml`, `vite.config.ts`, `tsconfig.json`, `.gitignore`, `.env`…
-- **60 folder names**: `.github`, `node_modules`, `.vscode`, `docker`, `kubernetes`, `android`…
+- **1,511 folder names**: special folders (`.github`, `node_modules`, `.vscode`…) plus a folder for every logo, so `docker/`, `supabase/`, `redis/` or `stripe/` get their logo
 - **Readable on dark and light themes**: black logos (GitHub, Rust, Next.js…) are recolored so they never disappear on a dark background
-- Lightweight (about 250 KB) and works offline
+- Works offline: every icon ships with the plugin (about 2 MB)
 
 ## Screenshots
 

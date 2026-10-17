@@ -71,12 +71,18 @@ const extensions = collect(fileExtensions, "fileExtensions");
 const files = collect(fileNames, "fileNames");
 const folders = collect(folderNames, "folderNames");
 
-// Ship only the icons the maps reference.
-const used = new Set([...extensions.values(), ...files.values(), ...folders.values()].map(iconFor));
+// Every logo also gets a folder named after it (`supabase/`, `redis/`…),
+// so each icon of the set shows up somewhere. Curated entries win.
+for (const id of icons.keys()) {
+	if (id.endsWith("-icon") || folders.has(id)) continue;
+	folders.set(id, id);
+}
+
+// Ship the whole set.
 const iconsDir = join(root, "icons");
 rmSync(iconsDir, { recursive: true, force: true });
 mkdirSync(iconsDir);
-for (const id of used) writeFileSync(join(iconsDir, `${id}.svg`), `${icons.get(id)}\n`);
+for (const [id, svg] of icons) writeFileSync(join(iconsDir, `${id}.svg`), `${svg}\n`);
 
 // Generic folder icons (the set has none).
 const FOLDER = "M3 6.5A1.5 1.5 0 0 1 4.5 5h5.4l2 2h7.6A1.5 1.5 0 0 1 21 8.5v9a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5z";
@@ -114,5 +120,5 @@ writeFileSync(
 );
 
 console.log(
-	`${used.size} of ${icons.size} SVGs, ${extensions.size} extensions, ${files.size} file names, ${folders.size} folder names`,
+	`${icons.size} SVGs, ${extensions.size} extensions, ${files.size} file names, ${folders.size} folder names`,
 );
