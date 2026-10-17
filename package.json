@@ -4,7 +4,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "node scripts/build.mjs",
-		"pack": "npm run build && rm -f plugin.zip && zip -qr plugin.zip LICENSE LICENSE-devicons file_icons.json folder_icons.json icon.png icons main.js plugin.json readme.md",
+		"pack": "npm run build && rm -f plugin.zip && zip -qr plugin.zip LICENSE LICENSE-devicons changelogs.md file_icons.json folder_icons.json icon.png icons main.js plugin.json readme.md",
 		"screenshots": "node scripts/screenshots.mjs"
 	},
 	"devDependencies": {

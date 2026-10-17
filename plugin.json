@@ -6,9 +6,10 @@
 	"version": "1.1.0",
 	"license": "Apache-2.0",
 	"readme": "readme.md",
+	"changelogs": "changelogs.md",
 	"repository": "https://github.com/CR4SH3UR/acode-Devicons-plugin.git",
 	"icon": "icon.png",
-	"files": ["icons", "file_icons.json", "folder_icons.json", "LICENSE-devicons"],
+	"files": ["icons", "file_icons.json", "folder_icons.json", "LICENSE-devicons", "changelogs.md"],
 	"keywords": ["icons", "file-icons", "devicons", "devicons.io", "icon-pack"],
 	"price": 20,
 	"author": {
