@@ -1,3 +1,7 @@
+# 1.1.1
+
+- Fixed installation failing with `Conflicting folderName association 'macOS'`: folder names are matched without regard to case, and the macOS logo clashed with the Apple icon used for `macos` folders.
+
 # 1.1.0
 
 - The full Devicons set is now included: 1,966 full-color icons (1,465 logos and their compact marks).
