@@ -73,10 +73,41 @@ const folders = collect(folderNames, "folderNames");
 
 // Every logo also gets a folder named after it (`supabase/`, `redis/`…),
 // so each icon of the set shows up somewhere. Curated entries win.
+// Acode matches folder names case-insensitively, so compare lowercase keys
+// (`macOS` would otherwise clash with the curated `macos`).
+const folderKeys = new Set([...folders.keys()].map((name) => name.toLowerCase()));
 for (const id of icons.keys()) {
-	if (id.endsWith("-icon") || folders.has(id)) continue;
-	folders.set(id, id);
+	const key = id.toLowerCase();
+	if (id.endsWith("-icon") || folderKeys.has(key)) continue;
+	folders.set(key, id);
+	folderKeys.add(key);
 }
+
+// Same rules as Acode's fileIcons.register(), so a pack it would reject
+// fails here instead of on the user's device.
+function validate() {
+	const ids = new Set([...extensions.values(), ...files.values(), ...folders.values()].map(iconFor));
+	for (const id of ids) {
+		if (!/^[a-zA-Z0-9_-]+$/.test(id)) throw new Error(`Invalid icon id '${id}'`);
+	}
+	for (const ext of extensions.keys()) {
+		if (ext.startsWith(".") || ext.endsWith(".") || ext.includes("..") || /[\s/\\]/.test(ext)) {
+			throw new Error(`Invalid file extension '${ext}'`);
+		}
+	}
+	for (const [label, map] of [["fileExtensions", extensions], ["fileNames", files], ["folderNames", folders]]) {
+		const seen = new Map();
+		for (const [key, name] of map) {
+			const lower = key.toLowerCase();
+			const icon = iconFor(name);
+			if (seen.has(lower) && seen.get(lower) !== icon) {
+				throw new Error(`${label}: '${key}' conflicts case-insensitively (${seen.get(lower)} vs ${icon})`);
+			}
+			seen.set(lower, icon);
+		}
+	}
+}
+validate();
 
 // Ship the whole set.
 const iconsDir = join(root, "icons");
